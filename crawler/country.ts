@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import ky from "ky";
 
 export type CountryLocodeRow = {
   change: string;
@@ -19,7 +20,9 @@ export type CountryLocodeRow = {
 export async function fetchCountryLocodes(
   url: string,
 ): Promise<CountryLocodeRow[]> {
-  const html = await fetch(url).then((r) => r.text());
+  const html = await ky(url, {
+    retry: 3,
+  }).then((r) => r.text());
   const $ = cheerio.load(html);
 
   // 直接用 :has + :contains 选表格
