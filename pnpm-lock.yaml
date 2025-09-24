@@ -23,6 +23,9 @@ importers:
       isbot:
         specifier: ^5.1.27
         version: 5.1.31
+      p-all:
+        specifier: ^5.0.1
+        version: 5.0.1
       react:
         specifier: ^19.1.0
         version: 19.1.1
@@ -1265,6 +1268,14 @@ packages:
   on-headers@1.1.0:
     resolution: {integrity: sha512-737ZY3yNnXy37FHkQxPzt4UZ2UWPWiCZWLvFZ4fu5cueciegX0zGPnrlY6bwRg4FdQOe9YU8MkmJwGhoMybl8A==}
     engines: {node: '>= 0.8'}
+
+  p-all@5.0.1:
+    resolution: {integrity: sha512-LMT7WX9ZSaq3J1zjloApkIVmtz0ZdMFSIqbuiEa3txGYPLjUPOvgOPOx3nFjo+f37ZYL+1aY666I2SG7GVwLOA==}
+    engines: {node: '>=16'}
+
+  p-map@6.0.0:
+    resolution: {integrity: sha512-T8BatKGY+k5rU+Q/GTYgrEf2r4xRMevAN5mtXc2aPc4rS1j3s+vWTaO2Wag94neXuCAUAs8cxBL9EeB5EA6diw==}
+    engines: {node: '>=16'}
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
@@ -2831,6 +2842,12 @@ snapshots:
       ee-first: 1.1.1
 
   on-headers@1.1.0: {}
+
+  p-all@5.0.1:
+    dependencies:
+      p-map: 6.0.0
+
+  p-map@6.0.0: {}
 
   package-json-from-dist@1.0.1: {}
 
