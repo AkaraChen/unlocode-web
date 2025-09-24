@@ -1,5 +1,5 @@
 import path from "node:path";
-import * as duck from "@duckdb/node-api";
+import { getConnection } from "~/lib/db.server";
 
 export type PortRow = {
   locode: string;
@@ -14,8 +14,7 @@ export type CountryRow = {
 };
 
 export async function searchUnlocode(q: string | null) {
-  const db = await duck.DuckDBInstance.create(":memory:");
-  const conn = await duck.DuckDBConnection.create(db);
+  const conn = await getConnection();
 
   const file = path.resolve(process.cwd(), "data/unlocode.json");
   const lit = file.replace(/'/g, "''");
@@ -33,13 +32,13 @@ export async function searchUnlocode(q: string | null) {
           OR lower(code) LIKE '%' || lower(?1) || '%'
        ORDER BY name
        LIMIT 10`,
-      [q]
+      [q],
     );
     await cr.readAll();
     countryRows = cr.getRowObjectsJS() as CountryRow[];
 
     const pr = await conn.runAndReadAll(
-      `SELECT 
+      `SELECT
          struct_extract(p.unnest, 'locode') AS locode,
          struct_extract(p.unnest, 'name') AS name,
          r.code AS countryCode,
@@ -53,7 +52,7 @@ export async function searchUnlocode(q: string | null) {
          CASE WHEN lower(r.name) LIKE '%' || lower(?1) || '%' THEN 0 ELSE 1 END,
          struct_extract(p.unnest, 'name') ASC
        LIMIT 200`,
-      [q]
+      [q],
     );
     await pr.readAll();
     portRows = pr.getRowObjectsJS() as PortRow[];
@@ -63,17 +62,24 @@ export async function searchUnlocode(q: string | null) {
     countryRows = cr.getRowObjectsJS() as CountryRow[];
 
     const pr = await conn.runAndReadAll(
-      `SELECT 
+      `SELECT
          struct_extract(p.unnest, 'locode') AS locode,
          struct_extract(p.unnest, 'name') AS name,
          r.code AS countryCode,
          r.name AS countryName
        FROM raw r, UNNEST(r.ports) AS p(unnest)
-       LIMIT 10`
+       LIMIT 10`,
     );
     await pr.readAll();
     portRows = pr.getRowObjectsJS() as PortRow[];
   }
 
-  return { countries: countryRows, ports: portRows };
+  // Close the connection to avoid leaking handles; DB instance remains cached
+  try {
+    return { countries: countryRows, ports: portRows };
+  } finally {
+    try {
+      conn.disconnectSync();
+    } catch {}
+  }
 }
