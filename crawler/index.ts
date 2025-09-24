@@ -3,6 +3,7 @@ import path from "node:path";
 import consola from "consola";
 import { fetchCountryList } from "./country-list";
 import { fetchCountryLocodes } from "./country";
+import type { Country } from "./types";
 import pAll from "p-all";
 
 const dataDir = path.resolve(process.cwd(), "data");
@@ -18,16 +19,36 @@ await fsp.writeFile(
   JSON.stringify(countryList),
 );
 
-const unlocode = await pAll(
-  countryList
-    .flatMap((country) => country.links)
-    .map(
-      (link) => () =>
+// 根据 types 中的 Country 输出结构化的国家及其港口列表
+const countries: Country[] = await pAll(
+  countryList.map((c) => async () => {
+    const rows = await pAll(
+      c.links.map((link) => () =>
         fetchCountryLocodes(link).finally(() => console.log(`${link} is ok`)),
-    ),
+      ),
+      { concurrency: 3 },
+    ).then((lists) => lists.flat());
+
+    // 去重：按 locode 去重
+    const portMap = new Map<string, { locode: string; name: string }>();
+    for (const r of rows) {
+      const name = r.nameWoDiacritics || r.name;
+      if (!r.locode || !name) continue;
+      if (!portMap.has(r.locode)) {
+        portMap.set(r.locode, { locode: r.locode, name });
+      }
+    }
+
+    return {
+      code: c.contryCode,
+      name: c.label,
+      ports: Array.from(portMap.values()),
+    } satisfies Country;
+  }),
   { concurrency: 3 },
-).then((codes) => codes.flat());
+);
+
 await fsp.writeFile(
   path.join(dataDir, "unlocode.json"),
-  JSON.stringify(unlocode),
+  JSON.stringify(countries),
 );
