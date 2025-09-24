@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 import { useLoaderData } from "react-router";
-import Fuse from "fuse.js";
-import { useMemo, useState } from "react";
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import {
   Command,
   CommandEmpty,
@@ -12,16 +12,23 @@ import {
   CommandDialog,
 } from "~/components/ui/command";
 
-type Port = { locode: string; name: string };
-type Country = { code: string; name: string; ports: Port[] };
+type RawPort = { locode: string; name: string };
+type RawCountry = { code: string; name: string; ports: RawPort[] };
+type Port = {
+  locode: string;
+  name: string;
+  countryCode: string;
+  countryName: string;
+};
+type CountryLite = { code: string; name: string };
 
-export async function loader() {
-  const pathMod = await import("node:path");
-  const fsp = await import("node:fs/promises");
-  const file = pathMod.resolve(process.cwd(), "data/unlocode.json");
-  const text = await fsp.readFile(file, "utf-8");
-  const countries = JSON.parse(text) as Country[];
-  return { countries };
+export async function loader({ request }: Route.LoaderArgs) {
+  const url = new URL(request.url);
+  const q = (url.searchParams.get("q") || "").trim();
+  // 初始数据由服务端查询，便于 SSR 首屏
+  const { searchUnlocode } = await import("~/server/search.server");
+  const data = await searchUnlocode(q);
+  return { q, initial: data };
 }
 
 export function meta({}: Route.MetaArgs) {
@@ -32,70 +39,29 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  const { countries } = useLoaderData<typeof loader>();
-  const [query, setQuery] = useState("");
+  const { q, initial } = useLoaderData<typeof loader>();
+  const [query, setQuery] = useState(q ?? "");
 
-  const { countryFuse, portFuse, portsFlat } = useMemo(() => {
-    const portsFlat: Array<{
-      type: "port";
-      countryCode: string;
-      countryName: string;
-      locode: string;
-      name: string;
-    }> = [];
-    for (const c of countries) {
-      for (const p of c.ports) {
-        portsFlat.push({
-          type: "port",
-          countryCode: c.code,
-          countryName: c.name,
-          locode: p.locode,
-          name: p.name,
-        });
-      }
-    }
+  const { data } = useQuery({
+    queryKey: ["search", query],
+    queryFn: async () => {
+      const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+      if (!res.ok) throw new Error("Failed to load");
+      return (await res.json()) as { countries: CountryLite[]; ports: Port[] };
+    },
+    initialData: initial,
+  });
 
-    const countryFuse = new Fuse(countries, {
-      keys: [
-        { name: "name", weight: 0.7 },
-        { name: "code", weight: 0.3 },
-      ],
-      threshold: 0.3,
-      ignoreLocation: true,
-    });
-
-    const portFuse = new Fuse(portsFlat, {
-      keys: [
-        { name: "name", weight: 0.7 },
-        { name: "locode", weight: 0.2 },
-        { name: "countryName", weight: 0.1 },
-      ],
-      threshold: 0.3,
-      ignoreLocation: true,
-    });
-
-    return { countryFuse, portFuse, portsFlat };
-  }, [countries]);
-
-  const countryResults = useMemo(() => {
-    if (!query) return countries.slice(0, 10);
-    return countryFuse
-      .search(query)
-      .slice(0, 10)
-      .map((r) => r.item);
-  }, [query, countryFuse, countries]);
-
-  const portResults = useMemo(() => {
-    if (!query) return portsFlat.slice(0, 10);
-    return portFuse
-      .search(query)
-      .slice(0, 10)
-      .map((r) => r.item);
-  }, [query, portFuse, portsFlat]);
+  const countryResults = data.countries as CountryLite[];
+  const portResults = data.ports as Port[];
 
   return (
     <main className="min-h-screen grid place-items-center p-4">
-      <CommandDialog open title="UN/LOCODE Search" description="Search countries and ports">
+      <CommandDialog
+        open
+        title="UN/LOCODE Search"
+        description="Search countries and ports"
+      >
         <Command>
           <CommandInput
             autoFocus
@@ -111,7 +77,9 @@ export default function Home() {
                 <CommandGroup heading="Countries">
                   {countryResults.map((c) => (
                     <CommandItem key={c.code} value={`${c.code}-${c.name}`}>
-                      <span className="font-mono mr-2 text-muted-foreground">{c.code}</span>
+                      <span className="font-mono mr-2 text-muted-foreground">
+                        {c.code}
+                      </span>
                       <span>{c.name}</span>
                     </CommandItem>
                   ))}
@@ -119,9 +87,13 @@ export default function Home() {
                 <CommandGroup heading="Ports">
                   {portResults.map((p) => (
                     <CommandItem key={p.locode} value={`${p.locode}-${p.name}`}>
-                      <span className="font-mono mr-2 text-muted-foreground">{p.locode}</span>
+                      <span className="font-mono mr-2 text-muted-foreground">
+                        {p.locode}
+                      </span>
                       <span className="mr-2">{p.name}</span>
-                      <span className="text-muted-foreground">({p.countryName})</span>
+                      <span className="text-muted-foreground">
+                        ({p.countryName})
+                      </span>
                     </CommandItem>
                   ))}
                 </CommandGroup>
