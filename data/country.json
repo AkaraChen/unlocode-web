@@ -1,1 +1,1750 @@
-[{"contryCode":"AF","label":"Afghanistan","links":["https://service.unece.org/trade/locode/af.htm"]},{"contryCode":"AX","label":"Åland Islands","links":["https://service.unece.org/trade/locode/ax.htm"]},{"contryCode":"AL","label":"Albania","links":["https://service.unece.org/trade/locode/al.htm"]},{"contryCode":"DZ","label":"Algeria","links":["https://service.unece.org/trade/locode/dz.htm"]},{"contryCode":"AS","label":"American Samoa","links":["https://service.unece.org/trade/locode/as.htm"]},{"contryCode":"AD","label":"Andorra","links":["https://service.unece.org/trade/locode/ad.htm"]},{"contryCode":"AO","label":"Angola","links":["https://service.unece.org/trade/locode/ao.htm"]},{"contryCode":"AI","label":"Anguilla","links":["https://service.unece.org/trade/locode/ai.htm"]},{"contryCode":"AQ","label":"Antarctica","links":["https://service.unece.org/trade/locode/aq.htm"]},{"contryCode":"AG","label":"Antigua and Barbuda","links":["https://service.unece.org/trade/locode/ag.htm"]},{"contryCode":"AR","label":"Argentina","links":["https://service.unece.org/trade/locode/ar.htm"]},{"contryCode":"AM","label":"Armenia","links":["https://service.unece.org/trade/locode/am.htm"]},{"contryCode":"AW","label":"Aruba","links":["https://service.unece.org/trade/locode/aw.htm"]},{"contryCode":"AU","label":"Australia","links":["https://service.unece.org/trade/locode/au.htm"]},{"contryCode":"AT","label":"Austria","links":["https://service.unece.org/trade/locode/at.htm"]},{"contryCode":"AZ","label":"Azerbaijan","links":["https://service.unece.org/trade/locode/az.htm"]},{"contryCode":"BS","label":"Bahamas","links":["https://service.unece.org/trade/locode/bs.htm"]},{"contryCode":"BH","label":"Bahrain","links":["https://service.unece.org/trade/locode/bh.htm"]},{"contryCode":"BD","label":"Bangladesh","links":["https://service.unece.org/trade/locode/bd.htm"]},{"contryCode":"BB","label":"Barbados","links":["https://service.unece.org/trade/locode/bb.htm"]},{"contryCode":"BY","label":"Belarus","links":["https://service.unece.org/trade/locode/by.htm"]},{"contryCode":"BE","label":"Belgium","links":["https://service.unece.org/trade/locode/be.htm"]},{"contryCode":"BZ","label":"Belize","links":["https://service.unece.org/trade/locode/bz.htm"]},{"contryCode":"BJ","label":"Benin","links":["https://service.unece.org/trade/locode/bj.htm"]},{"contryCode":"BM","label":"Bermuda","links":["https://service.unece.org/trade/locode/bm.htm"]},{"contryCode":"BT","label":"Bhutan","links":["https://service.unece.org/trade/locode/bt.htm"]},{"contryCode":"BO","label":"Bolivia","links":["https://service.unece.org/trade/locode/bo.htm"]},{"contryCode":"BQ","label":"Bonaire, Sint Eustatius and Saba","links":["https://service.unece.org/trade/locode/bq.htm"]},{"contryCode":"BA","label":"Bosnia and Herzegovina","links":["https://service.unece.org/trade/locode/ba.htm"]},{"contryCode":"BW","label":"Botswana","links":["https://service.unece.org/trade/locode/bw.htm"]},{"contryCode":"BR","label":"Brazil","links":["https://service.unece.org/trade/locode/br.htm"]},{"contryCode":"IO","label":"British Indian Ocean Territory","links":["https://service.unece.org/trade/locode/io.htm"]},{"contryCode":"BN","label":"Brunei Darussalam","links":["https://service.unece.org/trade/locode/bn.htm"]},{"contryCode":"BG","label":"Bulgaria","links":["https://service.unece.org/trade/locode/bg.htm"]},{"contryCode":"BF","label":"Burkina Faso","links":["https://service.unece.org/trade/locode/bf.htm"]},{"contryCode":"BI","label":"Burundi","links":["https://service.unece.org/trade/locode/bi.htm"]},{"contryCode":"KH","label":"Cambodia","links":["https://service.unece.org/trade/locode/kh.htm"]},{"contryCode":"CM","label":"Cameroon","links":["https://service.unece.org/trade/locode/cm.htm"]},{"contryCode":"CA","label":"Canada","links":["https://service.unece.org/trade/locode/ca.htm"]},{"contryCode":"CV","label":"Cape Verde","links":["https://service.unece.org/trade/locode/cv.htm"]},{"contryCode":"KY","label":"Cayman Islands","links":["https://service.unece.org/trade/locode/ky.htm"]},{"contryCode":"CF","label":"Central African Republic","links":["https://service.unece.org/trade/locode/cf.htm"]},{"contryCode":"TD","label":"Chad","links":["https://service.unece.org/trade/locode/td.htm"]},{"contryCode":"CL","label":"Chile","links":["https://service.unece.org/trade/locode/cl.htm"]},{"contryCode":"CN","label":"China","links":["https://service.unece.org/trade/locode/cn.htm"]},{"contryCode":"CX","label":"Christmas Island","links":["https://service.unece.org/trade/locode/cx.htm"]},{"contryCode":"CC","label":"Cocos (Keeling) Islands","links":["https://service.unece.org/trade/locode/cc.htm"]},{"contryCode":"CO","label":"Colombia","links":["https://service.unece.org/trade/locode/co.htm"]},{"contryCode":"KM","label":"Comoros","links":["https://service.unece.org/trade/locode/km.htm"]},{"contryCode":"CG","label":"Congo","links":["https://service.unece.org/trade/locode/cg.htm"]},{"contryCode":"CD","label":"Congo, The Democratic Republic of the","links":["https://service.unece.org/trade/locode/cd.htm"]},{"contryCode":"CK","label":"Cook Islands","links":["https://service.unece.org/trade/locode/ck.htm"]},{"contryCode":"CR","label":"Costa Rica","links":["https://service.unece.org/trade/locode/cr.htm"]},{"contryCode":"CI","label":"Côte d'Ivoire","links":["https://service.unece.org/trade/locode/ci.htm"]},{"contryCode":"HR","label":"Croatia","links":["https://service.unece.org/trade/locode/hr.htm"]},{"contryCode":"CU","label":"Cuba","links":["https://service.unece.org/trade/locode/cu.htm"]},{"contryCode":"CW","label":"Curaçao","links":["https://service.unece.org/trade/locode/cw.htm"]},{"contryCode":"CY","label":"Cyprus","links":["https://service.unece.org/trade/locode/cy.htm"]},{"contryCode":"CZ","label":"Czech Republic","links":["https://service.unece.org/trade/locode/cz.htm"]},{"contryCode":"DK","label":"Denmark","links":["https://service.unece.org/trade/locode/dk.htm"]},{"contryCode":"DJ","label":"Djibouti","links":["https://service.unece.org/trade/locode/dj.htm"]},{"contryCode":"DM","label":"Dominica","links":["https://service.unece.org/trade/locode/dm.htm"]},{"contryCode":"DO","label":"Dominican Republic","links":["https://service.unece.org/trade/locode/do.htm"]},{"contryCode":"EC","label":"Ecuador","links":["https://service.unece.org/trade/locode/ec.htm"]},{"contryCode":"EG","label":"Egypt","links":["https://service.unece.org/trade/locode/eg.htm"]},{"contryCode":"SV","label":"El Salvador","links":["https://service.unece.org/trade/locode/sv.htm"]},{"contryCode":"GQ","label":"Equatorial Guinea","links":["https://service.unece.org/trade/locode/gq.htm"]},{"contryCode":"ER","label":"Eritrea","links":["https://service.unece.org/trade/locode/er.htm"]},{"contryCode":"EE","label":"Estonia","links":["https://service.unece.org/trade/locode/ee.htm"]},{"contryCode":"SZ","label":"Eswatini","links":["https://service.unece.org/trade/locode/sz.htm"]},{"contryCode":"ET","label":"Ethiopia","links":["https://service.unece.org/trade/locode/et.htm"]},{"contryCode":"FK","label":"Falkland Islands (Malvinas)","links":["https://service.unece.org/trade/locode/fk.htm"]},{"contryCode":"FO","label":"Faroe Islands","links":["https://service.unece.org/trade/locode/fo.htm"]},{"contryCode":"FJ","label":"Fiji","links":["https://service.unece.org/trade/locode/fj.htm"]},{"contryCode":"FI","label":"Finland","links":["https://service.unece.org/trade/locode/fi.htm"]},{"contryCode":"FR","label":"France","links":["https://service.unece.org/trade/locode/fr.htm"]},{"contryCode":"GF","label":"French Guiana","links":["https://service.unece.org/trade/locode/gf.htm"]},{"contryCode":"PF","label":"French Polynesia","links":["https://service.unece.org/trade/locode/pf.htm"]},{"contryCode":"TF","label":"French Southern Territories","links":["https://service.unece.org/trade/locode/tf.htm"]},{"contryCode":"GA","label":"Gabon","links":["https://service.unece.org/trade/locode/ga.htm"]},{"contryCode":"GM","label":"Gambia","links":["https://service.unece.org/trade/locode/gm.htm"]},{"contryCode":"GE","label":"Georgia","links":["https://service.unece.org/trade/locode/ge.htm"]},{"contryCode":"DE","label":"Germany","links":["https://service.unece.org/trade/locode/de.htm"]},{"contryCode":"GH","label":"Ghana","links":["https://service.unece.org/trade/locode/gh.htm"]},{"contryCode":"GI","label":"Gibraltar","links":["https://service.unece.org/trade/locode/gi.htm"]},{"contryCode":"GR","label":"Greece","links":["https://service.unece.org/trade/locode/gr.htm"]},{"contryCode":"GL","label":"Greenland","links":["https://service.unece.org/trade/locode/gl.htm"]},{"contryCode":"GD","label":"Grenada","links":["https://service.unece.org/trade/locode/gd.htm"]},{"contryCode":"GP","label":"Guadeloupe","links":["https://service.unece.org/trade/locode/gp.htm"]},{"contryCode":"GU","label":"Guam","links":["https://service.unece.org/trade/locode/gu.htm"]},{"contryCode":"GT","label":"Guatemala","links":["https://service.unece.org/trade/locode/gt.htm"]},{"contryCode":"GG","label":"Guernsey","links":["https://service.unece.org/trade/locode/gg.htm"]},{"contryCode":"GN","label":"Guinea","links":["https://service.unece.org/trade/locode/gn.htm"]},{"contryCode":"GW","label":"Guinea-Bissau","links":["https://service.unece.org/trade/locode/gw.htm"]},{"contryCode":"GY","label":"Guyana","links":["https://service.unece.org/trade/locode/gy.htm"]},{"contryCode":"HT","label":"Haiti","links":["https://service.unece.org/trade/locode/ht.htm"]},{"contryCode":"HM","label":"Heard Island and McDonald Islands","links":["https://service.unece.org/trade/locode/hm.htm"]},{"contryCode":"VA","label":"Holy See (Vatican City State)","links":["https://service.unece.org/trade/locode/va.htm"]},{"contryCode":"HN","label":"Honduras","links":["https://service.unece.org/trade/locode/hn.htm"]},{"contryCode":"HK","label":"Hong Kong","links":["https://service.unece.org/trade/locode/hk.htm"]},{"contryCode":"HU","label":"Hungary","links":["https://service.unece.org/trade/locode/hu.htm"]},{"contryCode":"IS","label":"Iceland","links":["https://service.unece.org/trade/locode/is.htm"]},{"contryCode":"IN","label":"India","links":["https://service.unece.org/trade/locode/in.htm"]},{"contryCode":"ID","label":"Indonesia","links":["https://service.unece.org/trade/locode/id.htm"]},{"contryCode":"XZ","label":"Installations in International Waters","links":["https://service.unece.org/trade/locode/xz.htm"]},{"contryCode":"IR","label":"Iran, Islamic Republic of","links":["https://service.unece.org/trade/locode/ir.htm"]},{"contryCode":"IQ","label":"Iraq","links":["https://service.unece.org/trade/locode/iq.htm"]},{"contryCode":"IE","label":"Ireland","links":["https://service.unece.org/trade/locode/ie.htm"]},{"contryCode":"IM","label":"Isle of Man","links":["https://service.unece.org/trade/locode/im.htm"]},{"contryCode":"IL","label":"Israel","links":["https://service.unece.org/trade/locode/il.htm"]},{"contryCode":"IT","label":"Italy","links":["https://service.unece.org/trade/locode/it.htm"]},{"contryCode":"JM","label":"Jamaica","links":["https://service.unece.org/trade/locode/jm.htm"]},{"contryCode":"JP","label":"Japan","links":["https://service.unece.org/trade/locode/jp.htm"]},{"contryCode":"JE","label":"Jersey","links":["https://service.unece.org/trade/locode/je.htm"]},{"contryCode":"JO","label":"Jordan","links":["https://service.unece.org/trade/locode/jo.htm"]},{"contryCode":"KZ","label":"Kazakhstan","links":["https://service.unece.org/trade/locode/kz.htm"]},{"contryCode":"KE","label":"Kenya","links":["https://service.unece.org/trade/locode/ke.htm"]},{"contryCode":"KI","label":"Kiribati","links":["https://service.unece.org/trade/locode/ki.htm"]},{"contryCode":"KP","label":"Korea, Democratic People's Republic of","links":["https://service.unece.org/trade/locode/kp.htm"]},{"contryCode":"KR","label":"Korea, Republic of","links":["https://service.unece.org/trade/locode/kr.htm"]},{"contryCode":"KW","label":"Kuwait","links":["https://service.unece.org/trade/locode/kw.htm"]},{"contryCode":"KG","label":"Kyrgyzstan","links":["https://service.unece.org/trade/locode/kg.htm"]},{"contryCode":"LA","label":"Lao People's Democratic Republic","links":["https://service.unece.org/trade/locode/la.htm"]},{"contryCode":"LV","label":"Latvia","links":["https://service.unece.org/trade/locode/lv.htm"]},{"contryCode":"LB","label":"Lebanon","links":["https://service.unece.org/trade/locode/lb.htm"]},{"contryCode":"LS","label":"Lesotho","links":["https://service.unece.org/trade/locode/ls.htm"]},{"contryCode":"LR","label":"Liberia","links":["https://service.unece.org/trade/locode/lr.htm"]},{"contryCode":"LY","label":"Libya","links":["https://service.unece.org/trade/locode/ly.htm"]},{"contryCode":"LI","label":"Liechtenstein","links":["https://service.unece.org/trade/locode/li.htm"]},{"contryCode":"LT","label":"Lithuania","links":["https://service.unece.org/trade/locode/lt.htm"]},{"contryCode":"LU","label":"Luxembourg","links":["https://service.unece.org/trade/locode/lu.htm"]},{"contryCode":"MO","label":"Macao","links":["https://service.unece.org/trade/locode/mo.htm"]},{"contryCode":"MG","label":"Madagascar","links":["https://service.unece.org/trade/locode/mg.htm"]},{"contryCode":"MW","label":"Malawi","links":["https://service.unece.org/trade/locode/mw.htm"]},{"contryCode":"MY","label":"Malaysia","links":["https://service.unece.org/trade/locode/my.htm"]},{"contryCode":"MV","label":"Maldives","links":["https://service.unece.org/trade/locode/mv.htm"]},{"contryCode":"ML","label":"Mali","links":["https://service.unece.org/trade/locode/ml.htm"]},{"contryCode":"MT","label":"Malta","links":["https://service.unece.org/trade/locode/mt.htm"]},{"contryCode":"MH","label":"Marshall Islands","links":["https://service.unece.org/trade/locode/mh.htm"]},{"contryCode":"MQ","label":"Martinique","links":["https://service.unece.org/trade/locode/mq.htm"]},{"contryCode":"MR","label":"Mauritania","links":["https://service.unece.org/trade/locode/mr.htm"]},{"contryCode":"MU","label":"Mauritius","links":["https://service.unece.org/trade/locode/mu.htm"]},{"contryCode":"YT","label":"Mayotte","links":["https://service.unece.org/trade/locode/yt.htm"]},{"contryCode":"MX","label":"Mexico","links":["https://service.unece.org/trade/locode/mx.htm"]},{"contryCode":"FM","label":"Micronesia, Federated States of","links":["https://service.unece.org/trade/locode/fm.htm"]},{"contryCode":"MD","label":"Moldova, Republic of","links":["https://service.unece.org/trade/locode/md.htm"]},{"contryCode":"MC","label":"Monaco","links":["https://service.unece.org/trade/locode/mc.htm"]},{"contryCode":"MN","label":"Mongolia","links":["https://service.unece.org/trade/locode/mn.htm"]},{"contryCode":"ME","label":"Montenegro","links":["https://service.unece.org/trade/locode/me.htm"]},{"contryCode":"MS","label":"Montserrat","links":["https://service.unece.org/trade/locode/ms.htm"]},{"contryCode":"MA","label":"Morocco","links":["https://service.unece.org/trade/locode/ma.htm"]},{"contryCode":"MZ","label":"Mozambique","links":["https://service.unece.org/trade/locode/mz.htm"]},{"contryCode":"MM","label":"Myanmar","links":["https://service.unece.org/trade/locode/mm.htm"]},{"contryCode":"NA","label":"Namibia","links":["https://service.unece.org/trade/locode/na.htm"]},{"contryCode":"NR","label":"Nauru","links":["https://service.unece.org/trade/locode/nr.htm"]},{"contryCode":"NP","label":"Nepal","links":["https://service.unece.org/trade/locode/np.htm"]},{"contryCode":"NL","label":"Netherlands","links":["https://service.unece.org/trade/locode/nl.htm"]},{"contryCode":"NC","label":"New Caledonia","links":["https://service.unece.org/trade/locode/nc.htm"]},{"contryCode":"NZ","label":"New Zealand","links":["https://service.unece.org/trade/locode/nz.htm"]},{"contryCode":"NI","label":"Nicaragua","links":["https://service.unece.org/trade/locode/ni.htm"]},{"contryCode":"NE","label":"Niger","links":["https://service.unece.org/trade/locode/ne.htm"]},{"contryCode":"NG","label":"Nigeria","links":["https://service.unece.org/trade/locode/ng.htm"]},{"contryCode":"NU","label":"Niue","links":["https://service.unece.org/trade/locode/nu.htm"]},{"contryCode":"NF","label":"Norfolk Island","links":["https://service.unece.org/trade/locode/nf.htm"]},{"contryCode":"MK","label":"North Macedonia","links":["https://service.unece.org/trade/locode/mk.htm"]},{"contryCode":"MP","label":"Northern Mariana Islands","links":["https://service.unece.org/trade/locode/mp.htm"]},{"contryCode":"NO","label":"Norway","links":["https://service.unece.org/trade/locode/no.htm"]},{"contryCode":"OM","label":"Oman","links":["https://service.unece.org/trade/locode/om.htm"]},{"contryCode":"PK","label":"Pakistan","links":["https://service.unece.org/trade/locode/pk.htm"]},{"contryCode":"PW","label":"Palau","links":["https://service.unece.org/trade/locode/pw.htm"]},{"contryCode":"PS","label":"Palestine, State of","links":["https://service.unece.org/trade/locode/ps.htm"]},{"contryCode":"PA","label":"Panama","links":["https://service.unece.org/trade/locode/pa.htm"]},{"contryCode":"PG","label":"Papua New Guinea","links":["https://service.unece.org/trade/locode/pg.htm"]},{"contryCode":"PY","label":"Paraguay","links":["https://service.unece.org/trade/locode/py.htm"]},{"contryCode":"PE","label":"Peru","links":["https://service.unece.org/trade/locode/pe.htm"]},{"contryCode":"PH","label":"Philippines","links":["https://service.unece.org/trade/locode/ph.htm"]},{"contryCode":"PN","label":"Pitcairn","links":["https://service.unece.org/trade/locode/pn.htm"]},{"contryCode":"PL","label":"Poland","links":["https://service.unece.org/trade/locode/pl.htm"]},{"contryCode":"PT","label":"Portugal","links":["https://service.unece.org/trade/locode/pt.htm"]},{"contryCode":"PR","label":"Puerto Rico","links":["https://service.unece.org/trade/locode/pr.htm"]},{"contryCode":"QA","label":"Qatar","links":["https://service.unece.org/trade/locode/qa.htm"]},{"contryCode":"RE","label":"Reunion","links":["https://service.unece.org/trade/locode/re.htm"]},{"contryCode":"RO","label":"Romania","links":["https://service.unece.org/trade/locode/ro.htm"]},{"contryCode":"RU","label":"Russian Federation","links":["https://service.unece.org/trade/locode/ru.htm"]},{"contryCode":"RW","label":"Rwanda","links":["https://service.unece.org/trade/locode/rw.htm"]},{"contryCode":"BL","label":"Saint Barthélemy","links":["https://service.unece.org/trade/locode/bl.htm"]},{"contryCode":"SH","label":"Saint Helena, Ascension and Tristan Da Cunha","links":["https://service.unece.org/trade/locode/sh.htm"]},{"contryCode":"KN","label":"Saint Kitts and Nevis","links":["https://service.unece.org/trade/locode/kn.htm"]},{"contryCode":"LC","label":"Saint Lucia","links":["https://service.unece.org/trade/locode/lc.htm"]},{"contryCode":"MF","label":"Saint Martin (French Part)","links":["https://service.unece.org/trade/locode/mf.htm"]},{"contryCode":"PM","label":"Saint Pierre and Miquelon","links":["https://service.unece.org/trade/locode/pm.htm"]},{"contryCode":"VC","label":"Saint Vincent and the Grenadines","links":["https://service.unece.org/trade/locode/vc.htm"]},{"contryCode":"WS","label":"Samoa","links":["https://service.unece.org/trade/locode/ws.htm"]},{"contryCode":"SM","label":"San Marino","links":["https://service.unece.org/trade/locode/sm.htm"]},{"contryCode":"ST","label":"Sao Tome and Principe","links":["https://service.unece.org/trade/locode/st.htm"]},{"contryCode":"SA","label":"Saudi Arabia","links":["https://service.unece.org/trade/locode/sa.htm"]},{"contryCode":"SN","label":"Senegal","links":["https://service.unece.org/trade/locode/sn.htm"]},{"contryCode":"RS","label":"Serbia","links":["https://service.unece.org/trade/locode/rs.htm"]},{"contryCode":"SC","label":"Seychelles","links":["https://service.unece.org/trade/locode/sc.htm"]},{"contryCode":"SL","label":"Sierra Leone","links":["https://service.unece.org/trade/locode/sl.htm"]},{"contryCode":"SG","label":"Singapore","links":["https://service.unece.org/trade/locode/sg.htm"]},{"contryCode":"SX","label":"Sint Maarten (Dutch Part)","links":["https://service.unece.org/trade/locode/sx.htm"]},{"contryCode":"SK","label":"Slovakia","links":["https://service.unece.org/trade/locode/sk.htm"]},{"contryCode":"SI","label":"Slovenia","links":["https://service.unece.org/trade/locode/si.htm"]},{"contryCode":"SB","label":"Solomon Islands","links":["https://service.unece.org/trade/locode/sb.htm"]},{"contryCode":"SO","label":"Somalia","links":["https://service.unece.org/trade/locode/so.htm"]},{"contryCode":"ZA","label":"South Africa","links":["https://service.unece.org/trade/locode/za.htm"]},{"contryCode":"GS","label":"South Georgia and the South Sandwich Islands","links":["https://service.unece.org/trade/locode/gs.htm"]},{"contryCode":"SS","label":"South Sudan","links":["https://service.unece.org/trade/locode/ss.htm"]},{"contryCode":"ES","label":"Spain","links":["https://service.unece.org/trade/locode/es.htm"]},{"contryCode":"LK","label":"Sri Lanka","links":["https://service.unece.org/trade/locode/lk.htm"]},{"contryCode":"SD","label":"Sudan","links":["https://service.unece.org/trade/locode/sd.htm"]},{"contryCode":"SR","label":"Suriname","links":["https://service.unece.org/trade/locode/sr.htm"]},{"contryCode":"SJ","label":"Svalbard and Jan Mayen","links":["https://service.unece.org/trade/locode/sj.htm"]},{"contryCode":"SE","label":"Sweden","links":["https://service.unece.org/trade/locode/se.htm"]},{"contryCode":"CH","label":"Switzerland","links":["https://service.unece.org/trade/locode/ch.htm"]},{"contryCode":"SY","label":"Syrian Arab Republic","links":["https://service.unece.org/trade/locode/sy.htm"]},{"contryCode":"TW","label":"Taiwan, Province of China","links":["https://service.unece.org/trade/locode/tw.htm"]},{"contryCode":"TJ","label":"Tajikistan","links":["https://service.unece.org/trade/locode/tj.htm"]},{"contryCode":"TZ","label":"Tanzania, United Republic of","links":["https://service.unece.org/trade/locode/tz.htm"]},{"contryCode":"TH","label":"Thailand","links":["https://service.unece.org/trade/locode/th.htm"]},{"contryCode":"TL","label":"Timor-Leste","links":["https://service.unece.org/trade/locode/tl.htm"]},{"contryCode":"TG","label":"Togo","links":["https://service.unece.org/trade/locode/tg.htm"]},{"contryCode":"TK","label":"Tokelau","links":["https://service.unece.org/trade/locode/tk.htm"]},{"contryCode":"TO","label":"Tonga","links":["https://service.unece.org/trade/locode/to.htm"]},{"contryCode":"TT","label":"Trinidad and Tobago","links":["https://service.unece.org/trade/locode/tt.htm"]},{"contryCode":"TN","label":"Tunisia","links":["https://service.unece.org/trade/locode/tn.htm"]},{"contryCode":"TR","label":"Türkiye","links":["https://service.unece.org/trade/locode/tr.htm"]},{"contryCode":"TM","label":"Turkmenistan","links":["https://service.unece.org/trade/locode/tm.htm"]},{"contryCode":"TC","label":"Turks and Caicos Islands","links":["https://service.unece.org/trade/locode/tc.htm"]},{"contryCode":"TV","label":"Tuvalu","links":["https://service.unece.org/trade/locode/tv.htm"]},{"contryCode":"UG","label":"Uganda","links":["https://service.unece.org/trade/locode/ug.htm"]},{"contryCode":"UA","label":"Ukraine","links":["https://service.unece.org/trade/locode/ua.htm"]},{"contryCode":"AE","label":"United Arab Emirates","links":["https://service.unece.org/trade/locode/ae.htm"]},{"contryCode":"GB","label":"United Kingdom","links":["https://service.unece.org/trade/locode/gb.htm"]},{"contryCode":"US","label":"United States","links":["https://service.unece.org/trade/locode/us.htm","https://service.unece.org/trade/locode/usa.htm","https://service.unece.org/trade/locode/usf.htm","https://service.unece.org/trade/locode/usk.htm","https://service.unece.org/trade/locode/usp.htm","https://service.unece.org/trade/locode/usu.htm"]},{"contryCode":"UM","label":"United States Minor Outlying Islands","links":["https://service.unece.org/trade/locode/um.htm"]},{"contryCode":"UY","label":"Uruguay","links":["https://service.unece.org/trade/locode/uy.htm"]},{"contryCode":"UZ","label":"Uzbekistan","links":["https://service.unece.org/trade/locode/uz.htm"]},{"contryCode":"VU","label":"Vanuatu","links":["https://service.unece.org/trade/locode/vu.htm"]},{"contryCode":"VE","label":"Venezuela","links":["https://service.unece.org/trade/locode/ve.htm"]},{"contryCode":"VN","label":"Viet Nam","links":["https://service.unece.org/trade/locode/vn.htm"]},{"contryCode":"VG","label":"Virgin Islands, British","links":["https://service.unece.org/trade/locode/vg.htm"]},{"contryCode":"VI","label":"Virgin Islands, U.S.","links":["https://service.unece.org/trade/locode/vi.htm"]},{"contryCode":"WF","label":"Wallis and Futuna","links":["https://service.unece.org/trade/locode/wf.htm"]},{"contryCode":"EH","label":"Western Sahara","links":["https://service.unece.org/trade/locode/eh.htm"]},{"contryCode":"YE","label":"Yemen","links":["https://service.unece.org/trade/locode/ye.htm"]},{"contryCode":"ZM","label":"Zambia","links":["https://service.unece.org/trade/locode/zm.htm"]},{"contryCode":"ZW","label":"Zimbabwe","links":["https://service.unece.org/trade/locode/zw.htm"]}]
+[
+  {
+    "contryCode": "AF",
+    "label": "Afghanistan",
+    "links": [
+      "https://service.unece.org/trade/locode/af.htm"
+    ]
+  },
+  {
+    "contryCode": "AX",
+    "label": "Åland Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/ax.htm"
+    ]
+  },
+  {
+    "contryCode": "AL",
+    "label": "Albania",
+    "links": [
+      "https://service.unece.org/trade/locode/al.htm"
+    ]
+  },
+  {
+    "contryCode": "DZ",
+    "label": "Algeria",
+    "links": [
+      "https://service.unece.org/trade/locode/dz.htm"
+    ]
+  },
+  {
+    "contryCode": "AS",
+    "label": "American Samoa",
+    "links": [
+      "https://service.unece.org/trade/locode/as.htm"
+    ]
+  },
+  {
+    "contryCode": "AD",
+    "label": "Andorra",
+    "links": [
+      "https://service.unece.org/trade/locode/ad.htm"
+    ]
+  },
+  {
+    "contryCode": "AO",
+    "label": "Angola",
+    "links": [
+      "https://service.unece.org/trade/locode/ao.htm"
+    ]
+  },
+  {
+    "contryCode": "AI",
+    "label": "Anguilla",
+    "links": [
+      "https://service.unece.org/trade/locode/ai.htm"
+    ]
+  },
+  {
+    "contryCode": "AQ",
+    "label": "Antarctica",
+    "links": [
+      "https://service.unece.org/trade/locode/aq.htm"
+    ]
+  },
+  {
+    "contryCode": "AG",
+    "label": "Antigua and Barbuda",
+    "links": [
+      "https://service.unece.org/trade/locode/ag.htm"
+    ]
+  },
+  {
+    "contryCode": "AR",
+    "label": "Argentina",
+    "links": [
+      "https://service.unece.org/trade/locode/ar.htm"
+    ]
+  },
+  {
+    "contryCode": "AM",
+    "label": "Armenia",
+    "links": [
+      "https://service.unece.org/trade/locode/am.htm"
+    ]
+  },
+  {
+    "contryCode": "AW",
+    "label": "Aruba",
+    "links": [
+      "https://service.unece.org/trade/locode/aw.htm"
+    ]
+  },
+  {
+    "contryCode": "AU",
+    "label": "Australia",
+    "links": [
+      "https://service.unece.org/trade/locode/au.htm"
+    ]
+  },
+  {
+    "contryCode": "AT",
+    "label": "Austria",
+    "links": [
+      "https://service.unece.org/trade/locode/at.htm"
+    ]
+  },
+  {
+    "contryCode": "AZ",
+    "label": "Azerbaijan",
+    "links": [
+      "https://service.unece.org/trade/locode/az.htm"
+    ]
+  },
+  {
+    "contryCode": "BS",
+    "label": "Bahamas",
+    "links": [
+      "https://service.unece.org/trade/locode/bs.htm"
+    ]
+  },
+  {
+    "contryCode": "BH",
+    "label": "Bahrain",
+    "links": [
+      "https://service.unece.org/trade/locode/bh.htm"
+    ]
+  },
+  {
+    "contryCode": "BD",
+    "label": "Bangladesh",
+    "links": [
+      "https://service.unece.org/trade/locode/bd.htm"
+    ]
+  },
+  {
+    "contryCode": "BB",
+    "label": "Barbados",
+    "links": [
+      "https://service.unece.org/trade/locode/bb.htm"
+    ]
+  },
+  {
+    "contryCode": "BY",
+    "label": "Belarus",
+    "links": [
+      "https://service.unece.org/trade/locode/by.htm"
+    ]
+  },
+  {
+    "contryCode": "BE",
+    "label": "Belgium",
+    "links": [
+      "https://service.unece.org/trade/locode/be.htm"
+    ]
+  },
+  {
+    "contryCode": "BZ",
+    "label": "Belize",
+    "links": [
+      "https://service.unece.org/trade/locode/bz.htm"
+    ]
+  },
+  {
+    "contryCode": "BJ",
+    "label": "Benin",
+    "links": [
+      "https://service.unece.org/trade/locode/bj.htm"
+    ]
+  },
+  {
+    "contryCode": "BM",
+    "label": "Bermuda",
+    "links": [
+      "https://service.unece.org/trade/locode/bm.htm"
+    ]
+  },
+  {
+    "contryCode": "BT",
+    "label": "Bhutan",
+    "links": [
+      "https://service.unece.org/trade/locode/bt.htm"
+    ]
+  },
+  {
+    "contryCode": "BO",
+    "label": "Bolivia",
+    "links": [
+      "https://service.unece.org/trade/locode/bo.htm"
+    ]
+  },
+  {
+    "contryCode": "BQ",
+    "label": "Bonaire, Sint Eustatius and Saba",
+    "links": [
+      "https://service.unece.org/trade/locode/bq.htm"
+    ]
+  },
+  {
+    "contryCode": "BA",
+    "label": "Bosnia and Herzegovina",
+    "links": [
+      "https://service.unece.org/trade/locode/ba.htm"
+    ]
+  },
+  {
+    "contryCode": "BW",
+    "label": "Botswana",
+    "links": [
+      "https://service.unece.org/trade/locode/bw.htm"
+    ]
+  },
+  {
+    "contryCode": "BR",
+    "label": "Brazil",
+    "links": [
+      "https://service.unece.org/trade/locode/br.htm"
+    ]
+  },
+  {
+    "contryCode": "IO",
+    "label": "British Indian Ocean Territory",
+    "links": [
+      "https://service.unece.org/trade/locode/io.htm"
+    ]
+  },
+  {
+    "contryCode": "BN",
+    "label": "Brunei Darussalam",
+    "links": [
+      "https://service.unece.org/trade/locode/bn.htm"
+    ]
+  },
+  {
+    "contryCode": "BG",
+    "label": "Bulgaria",
+    "links": [
+      "https://service.unece.org/trade/locode/bg.htm"
+    ]
+  },
+  {
+    "contryCode": "BF",
+    "label": "Burkina Faso",
+    "links": [
+      "https://service.unece.org/trade/locode/bf.htm"
+    ]
+  },
+  {
+    "contryCode": "BI",
+    "label": "Burundi",
+    "links": [
+      "https://service.unece.org/trade/locode/bi.htm"
+    ]
+  },
+  {
+    "contryCode": "KH",
+    "label": "Cambodia",
+    "links": [
+      "https://service.unece.org/trade/locode/kh.htm"
+    ]
+  },
+  {
+    "contryCode": "CM",
+    "label": "Cameroon",
+    "links": [
+      "https://service.unece.org/trade/locode/cm.htm"
+    ]
+  },
+  {
+    "contryCode": "CA",
+    "label": "Canada",
+    "links": [
+      "https://service.unece.org/trade/locode/ca.htm"
+    ]
+  },
+  {
+    "contryCode": "CV",
+    "label": "Cape Verde",
+    "links": [
+      "https://service.unece.org/trade/locode/cv.htm"
+    ]
+  },
+  {
+    "contryCode": "KY",
+    "label": "Cayman Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/ky.htm"
+    ]
+  },
+  {
+    "contryCode": "CF",
+    "label": "Central African Republic",
+    "links": [
+      "https://service.unece.org/trade/locode/cf.htm"
+    ]
+  },
+  {
+    "contryCode": "TD",
+    "label": "Chad",
+    "links": [
+      "https://service.unece.org/trade/locode/td.htm"
+    ]
+  },
+  {
+    "contryCode": "CL",
+    "label": "Chile",
+    "links": [
+      "https://service.unece.org/trade/locode/cl.htm"
+    ]
+  },
+  {
+    "contryCode": "CN",
+    "label": "China",
+    "links": [
+      "https://service.unece.org/trade/locode/cn.htm"
+    ]
+  },
+  {
+    "contryCode": "CX",
+    "label": "Christmas Island",
+    "links": [
+      "https://service.unece.org/trade/locode/cx.htm"
+    ]
+  },
+  {
+    "contryCode": "CC",
+    "label": "Cocos (Keeling) Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/cc.htm"
+    ]
+  },
+  {
+    "contryCode": "CO",
+    "label": "Colombia",
+    "links": [
+      "https://service.unece.org/trade/locode/co.htm"
+    ]
+  },
+  {
+    "contryCode": "KM",
+    "label": "Comoros",
+    "links": [
+      "https://service.unece.org/trade/locode/km.htm"
+    ]
+  },
+  {
+    "contryCode": "CG",
+    "label": "Congo",
+    "links": [
+      "https://service.unece.org/trade/locode/cg.htm"
+    ]
+  },
+  {
+    "contryCode": "CD",
+    "label": "Congo, The Democratic Republic of the",
+    "links": [
+      "https://service.unece.org/trade/locode/cd.htm"
+    ]
+  },
+  {
+    "contryCode": "CK",
+    "label": "Cook Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/ck.htm"
+    ]
+  },
+  {
+    "contryCode": "CR",
+    "label": "Costa Rica",
+    "links": [
+      "https://service.unece.org/trade/locode/cr.htm"
+    ]
+  },
+  {
+    "contryCode": "CI",
+    "label": "Côte d'Ivoire",
+    "links": [
+      "https://service.unece.org/trade/locode/ci.htm"
+    ]
+  },
+  {
+    "contryCode": "HR",
+    "label": "Croatia",
+    "links": [
+      "https://service.unece.org/trade/locode/hr.htm"
+    ]
+  },
+  {
+    "contryCode": "CU",
+    "label": "Cuba",
+    "links": [
+      "https://service.unece.org/trade/locode/cu.htm"
+    ]
+  },
+  {
+    "contryCode": "CW",
+    "label": "Curaçao",
+    "links": [
+      "https://service.unece.org/trade/locode/cw.htm"
+    ]
+  },
+  {
+    "contryCode": "CY",
+    "label": "Cyprus",
+    "links": [
+      "https://service.unece.org/trade/locode/cy.htm"
+    ]
+  },
+  {
+    "contryCode": "CZ",
+    "label": "Czech Republic",
+    "links": [
+      "https://service.unece.org/trade/locode/cz.htm"
+    ]
+  },
+  {
+    "contryCode": "DK",
+    "label": "Denmark",
+    "links": [
+      "https://service.unece.org/trade/locode/dk.htm"
+    ]
+  },
+  {
+    "contryCode": "DJ",
+    "label": "Djibouti",
+    "links": [
+      "https://service.unece.org/trade/locode/dj.htm"
+    ]
+  },
+  {
+    "contryCode": "DM",
+    "label": "Dominica",
+    "links": [
+      "https://service.unece.org/trade/locode/dm.htm"
+    ]
+  },
+  {
+    "contryCode": "DO",
+    "label": "Dominican Republic",
+    "links": [
+      "https://service.unece.org/trade/locode/do.htm"
+    ]
+  },
+  {
+    "contryCode": "EC",
+    "label": "Ecuador",
+    "links": [
+      "https://service.unece.org/trade/locode/ec.htm"
+    ]
+  },
+  {
+    "contryCode": "EG",
+    "label": "Egypt",
+    "links": [
+      "https://service.unece.org/trade/locode/eg.htm"
+    ]
+  },
+  {
+    "contryCode": "SV",
+    "label": "El Salvador",
+    "links": [
+      "https://service.unece.org/trade/locode/sv.htm"
+    ]
+  },
+  {
+    "contryCode": "GQ",
+    "label": "Equatorial Guinea",
+    "links": [
+      "https://service.unece.org/trade/locode/gq.htm"
+    ]
+  },
+  {
+    "contryCode": "ER",
+    "label": "Eritrea",
+    "links": [
+      "https://service.unece.org/trade/locode/er.htm"
+    ]
+  },
+  {
+    "contryCode": "EE",
+    "label": "Estonia",
+    "links": [
+      "https://service.unece.org/trade/locode/ee.htm"
+    ]
+  },
+  {
+    "contryCode": "SZ",
+    "label": "Eswatini",
+    "links": [
+      "https://service.unece.org/trade/locode/sz.htm"
+    ]
+  },
+  {
+    "contryCode": "ET",
+    "label": "Ethiopia",
+    "links": [
+      "https://service.unece.org/trade/locode/et.htm"
+    ]
+  },
+  {
+    "contryCode": "FK",
+    "label": "Falkland Islands (Malvinas)",
+    "links": [
+      "https://service.unece.org/trade/locode/fk.htm"
+    ]
+  },
+  {
+    "contryCode": "FO",
+    "label": "Faroe Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/fo.htm"
+    ]
+  },
+  {
+    "contryCode": "FJ",
+    "label": "Fiji",
+    "links": [
+      "https://service.unece.org/trade/locode/fj.htm"
+    ]
+  },
+  {
+    "contryCode": "FI",
+    "label": "Finland",
+    "links": [
+      "https://service.unece.org/trade/locode/fi.htm"
+    ]
+  },
+  {
+    "contryCode": "FR",
+    "label": "France",
+    "links": [
+      "https://service.unece.org/trade/locode/fr.htm"
+    ]
+  },
+  {
+    "contryCode": "GF",
+    "label": "French Guiana",
+    "links": [
+      "https://service.unece.org/trade/locode/gf.htm"
+    ]
+  },
+  {
+    "contryCode": "PF",
+    "label": "French Polynesia",
+    "links": [
+      "https://service.unece.org/trade/locode/pf.htm"
+    ]
+  },
+  {
+    "contryCode": "TF",
+    "label": "French Southern Territories",
+    "links": [
+      "https://service.unece.org/trade/locode/tf.htm"
+    ]
+  },
+  {
+    "contryCode": "GA",
+    "label": "Gabon",
+    "links": [
+      "https://service.unece.org/trade/locode/ga.htm"
+    ]
+  },
+  {
+    "contryCode": "GM",
+    "label": "Gambia",
+    "links": [
+      "https://service.unece.org/trade/locode/gm.htm"
+    ]
+  },
+  {
+    "contryCode": "GE",
+    "label": "Georgia",
+    "links": [
+      "https://service.unece.org/trade/locode/ge.htm"
+    ]
+  },
+  {
+    "contryCode": "DE",
+    "label": "Germany",
+    "links": [
+      "https://service.unece.org/trade/locode/de.htm"
+    ]
+  },
+  {
+    "contryCode": "GH",
+    "label": "Ghana",
+    "links": [
+      "https://service.unece.org/trade/locode/gh.htm"
+    ]
+  },
+  {
+    "contryCode": "GI",
+    "label": "Gibraltar",
+    "links": [
+      "https://service.unece.org/trade/locode/gi.htm"
+    ]
+  },
+  {
+    "contryCode": "GR",
+    "label": "Greece",
+    "links": [
+      "https://service.unece.org/trade/locode/gr.htm"
+    ]
+  },
+  {
+    "contryCode": "GL",
+    "label": "Greenland",
+    "links": [
+      "https://service.unece.org/trade/locode/gl.htm"
+    ]
+  },
+  {
+    "contryCode": "GD",
+    "label": "Grenada",
+    "links": [
+      "https://service.unece.org/trade/locode/gd.htm"
+    ]
+  },
+  {
+    "contryCode": "GP",
+    "label": "Guadeloupe",
+    "links": [
+      "https://service.unece.org/trade/locode/gp.htm"
+    ]
+  },
+  {
+    "contryCode": "GU",
+    "label": "Guam",
+    "links": [
+      "https://service.unece.org/trade/locode/gu.htm"
+    ]
+  },
+  {
+    "contryCode": "GT",
+    "label": "Guatemala",
+    "links": [
+      "https://service.unece.org/trade/locode/gt.htm"
+    ]
+  },
+  {
+    "contryCode": "GG",
+    "label": "Guernsey",
+    "links": [
+      "https://service.unece.org/trade/locode/gg.htm"
+    ]
+  },
+  {
+    "contryCode": "GN",
+    "label": "Guinea",
+    "links": [
+      "https://service.unece.org/trade/locode/gn.htm"
+    ]
+  },
+  {
+    "contryCode": "GW",
+    "label": "Guinea-Bissau",
+    "links": [
+      "https://service.unece.org/trade/locode/gw.htm"
+    ]
+  },
+  {
+    "contryCode": "GY",
+    "label": "Guyana",
+    "links": [
+      "https://service.unece.org/trade/locode/gy.htm"
+    ]
+  },
+  {
+    "contryCode": "HT",
+    "label": "Haiti",
+    "links": [
+      "https://service.unece.org/trade/locode/ht.htm"
+    ]
+  },
+  {
+    "contryCode": "HM",
+    "label": "Heard Island and McDonald Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/hm.htm"
+    ]
+  },
+  {
+    "contryCode": "VA",
+    "label": "Holy See (Vatican City State)",
+    "links": [
+      "https://service.unece.org/trade/locode/va.htm"
+    ]
+  },
+  {
+    "contryCode": "HN",
+    "label": "Honduras",
+    "links": [
+      "https://service.unece.org/trade/locode/hn.htm"
+    ]
+  },
+  {
+    "contryCode": "HK",
+    "label": "Hong Kong",
+    "links": [
+      "https://service.unece.org/trade/locode/hk.htm"
+    ]
+  },
+  {
+    "contryCode": "HU",
+    "label": "Hungary",
+    "links": [
+      "https://service.unece.org/trade/locode/hu.htm"
+    ]
+  },
+  {
+    "contryCode": "IS",
+    "label": "Iceland",
+    "links": [
+      "https://service.unece.org/trade/locode/is.htm"
+    ]
+  },
+  {
+    "contryCode": "IN",
+    "label": "India",
+    "links": [
+      "https://service.unece.org/trade/locode/in.htm"
+    ]
+  },
+  {
+    "contryCode": "ID",
+    "label": "Indonesia",
+    "links": [
+      "https://service.unece.org/trade/locode/id.htm"
+    ]
+  },
+  {
+    "contryCode": "XZ",
+    "label": "Installations in International Waters",
+    "links": [
+      "https://service.unece.org/trade/locode/xz.htm"
+    ]
+  },
+  {
+    "contryCode": "IR",
+    "label": "Iran, Islamic Republic of",
+    "links": [
+      "https://service.unece.org/trade/locode/ir.htm"
+    ]
+  },
+  {
+    "contryCode": "IQ",
+    "label": "Iraq",
+    "links": [
+      "https://service.unece.org/trade/locode/iq.htm"
+    ]
+  },
+  {
+    "contryCode": "IE",
+    "label": "Ireland",
+    "links": [
+      "https://service.unece.org/trade/locode/ie.htm"
+    ]
+  },
+  {
+    "contryCode": "IM",
+    "label": "Isle of Man",
+    "links": [
+      "https://service.unece.org/trade/locode/im.htm"
+    ]
+  },
+  {
+    "contryCode": "IL",
+    "label": "Israel",
+    "links": [
+      "https://service.unece.org/trade/locode/il.htm"
+    ]
+  },
+  {
+    "contryCode": "IT",
+    "label": "Italy",
+    "links": [
+      "https://service.unece.org/trade/locode/it.htm"
+    ]
+  },
+  {
+    "contryCode": "JM",
+    "label": "Jamaica",
+    "links": [
+      "https://service.unece.org/trade/locode/jm.htm"
+    ]
+  },
+  {
+    "contryCode": "JP",
+    "label": "Japan",
+    "links": [
+      "https://service.unece.org/trade/locode/jp.htm"
+    ]
+  },
+  {
+    "contryCode": "JE",
+    "label": "Jersey",
+    "links": [
+      "https://service.unece.org/trade/locode/je.htm"
+    ]
+  },
+  {
+    "contryCode": "JO",
+    "label": "Jordan",
+    "links": [
+      "https://service.unece.org/trade/locode/jo.htm"
+    ]
+  },
+  {
+    "contryCode": "KZ",
+    "label": "Kazakhstan",
+    "links": [
+      "https://service.unece.org/trade/locode/kz.htm"
+    ]
+  },
+  {
+    "contryCode": "KE",
+    "label": "Kenya",
+    "links": [
+      "https://service.unece.org/trade/locode/ke.htm"
+    ]
+  },
+  {
+    "contryCode": "KI",
+    "label": "Kiribati",
+    "links": [
+      "https://service.unece.org/trade/locode/ki.htm"
+    ]
+  },
+  {
+    "contryCode": "KP",
+    "label": "Korea, Democratic People's Republic of",
+    "links": [
+      "https://service.unece.org/trade/locode/kp.htm"
+    ]
+  },
+  {
+    "contryCode": "KR",
+    "label": "Korea, Republic of",
+    "links": [
+      "https://service.unece.org/trade/locode/kr.htm"
+    ]
+  },
+  {
+    "contryCode": "KW",
+    "label": "Kuwait",
+    "links": [
+      "https://service.unece.org/trade/locode/kw.htm"
+    ]
+  },
+  {
+    "contryCode": "KG",
+    "label": "Kyrgyzstan",
+    "links": [
+      "https://service.unece.org/trade/locode/kg.htm"
+    ]
+  },
+  {
+    "contryCode": "LA",
+    "label": "Lao People's Democratic Republic",
+    "links": [
+      "https://service.unece.org/trade/locode/la.htm"
+    ]
+  },
+  {
+    "contryCode": "LV",
+    "label": "Latvia",
+    "links": [
+      "https://service.unece.org/trade/locode/lv.htm"
+    ]
+  },
+  {
+    "contryCode": "LB",
+    "label": "Lebanon",
+    "links": [
+      "https://service.unece.org/trade/locode/lb.htm"
+    ]
+  },
+  {
+    "contryCode": "LS",
+    "label": "Lesotho",
+    "links": [
+      "https://service.unece.org/trade/locode/ls.htm"
+    ]
+  },
+  {
+    "contryCode": "LR",
+    "label": "Liberia",
+    "links": [
+      "https://service.unece.org/trade/locode/lr.htm"
+    ]
+  },
+  {
+    "contryCode": "LY",
+    "label": "Libya",
+    "links": [
+      "https://service.unece.org/trade/locode/ly.htm"
+    ]
+  },
+  {
+    "contryCode": "LI",
+    "label": "Liechtenstein",
+    "links": [
+      "https://service.unece.org/trade/locode/li.htm"
+    ]
+  },
+  {
+    "contryCode": "LT",
+    "label": "Lithuania",
+    "links": [
+      "https://service.unece.org/trade/locode/lt.htm"
+    ]
+  },
+  {
+    "contryCode": "LU",
+    "label": "Luxembourg",
+    "links": [
+      "https://service.unece.org/trade/locode/lu.htm"
+    ]
+  },
+  {
+    "contryCode": "MO",
+    "label": "Macao",
+    "links": [
+      "https://service.unece.org/trade/locode/mo.htm"
+    ]
+  },
+  {
+    "contryCode": "MG",
+    "label": "Madagascar",
+    "links": [
+      "https://service.unece.org/trade/locode/mg.htm"
+    ]
+  },
+  {
+    "contryCode": "MW",
+    "label": "Malawi",
+    "links": [
+      "https://service.unece.org/trade/locode/mw.htm"
+    ]
+  },
+  {
+    "contryCode": "MY",
+    "label": "Malaysia",
+    "links": [
+      "https://service.unece.org/trade/locode/my.htm"
+    ]
+  },
+  {
+    "contryCode": "MV",
+    "label": "Maldives",
+    "links": [
+      "https://service.unece.org/trade/locode/mv.htm"
+    ]
+  },
+  {
+    "contryCode": "ML",
+    "label": "Mali",
+    "links": [
+      "https://service.unece.org/trade/locode/ml.htm"
+    ]
+  },
+  {
+    "contryCode": "MT",
+    "label": "Malta",
+    "links": [
+      "https://service.unece.org/trade/locode/mt.htm"
+    ]
+  },
+  {
+    "contryCode": "MH",
+    "label": "Marshall Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/mh.htm"
+    ]
+  },
+  {
+    "contryCode": "MQ",
+    "label": "Martinique",
+    "links": [
+      "https://service.unece.org/trade/locode/mq.htm"
+    ]
+  },
+  {
+    "contryCode": "MR",
+    "label": "Mauritania",
+    "links": [
+      "https://service.unece.org/trade/locode/mr.htm"
+    ]
+  },
+  {
+    "contryCode": "MU",
+    "label": "Mauritius",
+    "links": [
+      "https://service.unece.org/trade/locode/mu.htm"
+    ]
+  },
+  {
+    "contryCode": "YT",
+    "label": "Mayotte",
+    "links": [
+      "https://service.unece.org/trade/locode/yt.htm"
+    ]
+  },
+  {
+    "contryCode": "MX",
+    "label": "Mexico",
+    "links": [
+      "https://service.unece.org/trade/locode/mx.htm"
+    ]
+  },
+  {
+    "contryCode": "FM",
+    "label": "Micronesia, Federated States of",
+    "links": [
+      "https://service.unece.org/trade/locode/fm.htm"
+    ]
+  },
+  {
+    "contryCode": "MD",
+    "label": "Moldova, Republic of",
+    "links": [
+      "https://service.unece.org/trade/locode/md.htm"
+    ]
+  },
+  {
+    "contryCode": "MC",
+    "label": "Monaco",
+    "links": [
+      "https://service.unece.org/trade/locode/mc.htm"
+    ]
+  },
+  {
+    "contryCode": "MN",
+    "label": "Mongolia",
+    "links": [
+      "https://service.unece.org/trade/locode/mn.htm"
+    ]
+  },
+  {
+    "contryCode": "ME",
+    "label": "Montenegro",
+    "links": [
+      "https://service.unece.org/trade/locode/me.htm"
+    ]
+  },
+  {
+    "contryCode": "MS",
+    "label": "Montserrat",
+    "links": [
+      "https://service.unece.org/trade/locode/ms.htm"
+    ]
+  },
+  {
+    "contryCode": "MA",
+    "label": "Morocco",
+    "links": [
+      "https://service.unece.org/trade/locode/ma.htm"
+    ]
+  },
+  {
+    "contryCode": "MZ",
+    "label": "Mozambique",
+    "links": [
+      "https://service.unece.org/trade/locode/mz.htm"
+    ]
+  },
+  {
+    "contryCode": "MM",
+    "label": "Myanmar",
+    "links": [
+      "https://service.unece.org/trade/locode/mm.htm"
+    ]
+  },
+  {
+    "contryCode": "NA",
+    "label": "Namibia",
+    "links": [
+      "https://service.unece.org/trade/locode/na.htm"
+    ]
+  },
+  {
+    "contryCode": "NR",
+    "label": "Nauru",
+    "links": [
+      "https://service.unece.org/trade/locode/nr.htm"
+    ]
+  },
+  {
+    "contryCode": "NP",
+    "label": "Nepal",
+    "links": [
+      "https://service.unece.org/trade/locode/np.htm"
+    ]
+  },
+  {
+    "contryCode": "NL",
+    "label": "Netherlands",
+    "links": [
+      "https://service.unece.org/trade/locode/nl.htm"
+    ]
+  },
+  {
+    "contryCode": "NC",
+    "label": "New Caledonia",
+    "links": [
+      "https://service.unece.org/trade/locode/nc.htm"
+    ]
+  },
+  {
+    "contryCode": "NZ",
+    "label": "New Zealand",
+    "links": [
+      "https://service.unece.org/trade/locode/nz.htm"
+    ]
+  },
+  {
+    "contryCode": "NI",
+    "label": "Nicaragua",
+    "links": [
+      "https://service.unece.org/trade/locode/ni.htm"
+    ]
+  },
+  {
+    "contryCode": "NE",
+    "label": "Niger",
+    "links": [
+      "https://service.unece.org/trade/locode/ne.htm"
+    ]
+  },
+  {
+    "contryCode": "NG",
+    "label": "Nigeria",
+    "links": [
+      "https://service.unece.org/trade/locode/ng.htm"
+    ]
+  },
+  {
+    "contryCode": "NU",
+    "label": "Niue",
+    "links": [
+      "https://service.unece.org/trade/locode/nu.htm"
+    ]
+  },
+  {
+    "contryCode": "NF",
+    "label": "Norfolk Island",
+    "links": [
+      "https://service.unece.org/trade/locode/nf.htm"
+    ]
+  },
+  {
+    "contryCode": "MK",
+    "label": "North Macedonia",
+    "links": [
+      "https://service.unece.org/trade/locode/mk.htm"
+    ]
+  },
+  {
+    "contryCode": "MP",
+    "label": "Northern Mariana Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/mp.htm"
+    ]
+  },
+  {
+    "contryCode": "NO",
+    "label": "Norway",
+    "links": [
+      "https://service.unece.org/trade/locode/no.htm"
+    ]
+  },
+  {
+    "contryCode": "OM",
+    "label": "Oman",
+    "links": [
+      "https://service.unece.org/trade/locode/om.htm"
+    ]
+  },
+  {
+    "contryCode": "PK",
+    "label": "Pakistan",
+    "links": [
+      "https://service.unece.org/trade/locode/pk.htm"
+    ]
+  },
+  {
+    "contryCode": "PW",
+    "label": "Palau",
+    "links": [
+      "https://service.unece.org/trade/locode/pw.htm"
+    ]
+  },
+  {
+    "contryCode": "PS",
+    "label": "Palestine, State of",
+    "links": [
+      "https://service.unece.org/trade/locode/ps.htm"
+    ]
+  },
+  {
+    "contryCode": "PA",
+    "label": "Panama",
+    "links": [
+      "https://service.unece.org/trade/locode/pa.htm"
+    ]
+  },
+  {
+    "contryCode": "PG",
+    "label": "Papua New Guinea",
+    "links": [
+      "https://service.unece.org/trade/locode/pg.htm"
+    ]
+  },
+  {
+    "contryCode": "PY",
+    "label": "Paraguay",
+    "links": [
+      "https://service.unece.org/trade/locode/py.htm"
+    ]
+  },
+  {
+    "contryCode": "PE",
+    "label": "Peru",
+    "links": [
+      "https://service.unece.org/trade/locode/pe.htm"
+    ]
+  },
+  {
+    "contryCode": "PH",
+    "label": "Philippines",
+    "links": [
+      "https://service.unece.org/trade/locode/ph.htm"
+    ]
+  },
+  {
+    "contryCode": "PN",
+    "label": "Pitcairn",
+    "links": [
+      "https://service.unece.org/trade/locode/pn.htm"
+    ]
+  },
+  {
+    "contryCode": "PL",
+    "label": "Poland",
+    "links": [
+      "https://service.unece.org/trade/locode/pl.htm"
+    ]
+  },
+  {
+    "contryCode": "PT",
+    "label": "Portugal",
+    "links": [
+      "https://service.unece.org/trade/locode/pt.htm"
+    ]
+  },
+  {
+    "contryCode": "PR",
+    "label": "Puerto Rico",
+    "links": [
+      "https://service.unece.org/trade/locode/pr.htm"
+    ]
+  },
+  {
+    "contryCode": "QA",
+    "label": "Qatar",
+    "links": [
+      "https://service.unece.org/trade/locode/qa.htm"
+    ]
+  },
+  {
+    "contryCode": "RE",
+    "label": "Reunion",
+    "links": [
+      "https://service.unece.org/trade/locode/re.htm"
+    ]
+  },
+  {
+    "contryCode": "RO",
+    "label": "Romania",
+    "links": [
+      "https://service.unece.org/trade/locode/ro.htm"
+    ]
+  },
+  {
+    "contryCode": "RU",
+    "label": "Russian Federation",
+    "links": [
+      "https://service.unece.org/trade/locode/ru.htm"
+    ]
+  },
+  {
+    "contryCode": "RW",
+    "label": "Rwanda",
+    "links": [
+      "https://service.unece.org/trade/locode/rw.htm"
+    ]
+  },
+  {
+    "contryCode": "BL",
+    "label": "Saint Barthélemy",
+    "links": [
+      "https://service.unece.org/trade/locode/bl.htm"
+    ]
+  },
+  {
+    "contryCode": "SH",
+    "label": "Saint Helena, Ascension and Tristan Da Cunha",
+    "links": [
+      "https://service.unece.org/trade/locode/sh.htm"
+    ]
+  },
+  {
+    "contryCode": "KN",
+    "label": "Saint Kitts and Nevis",
+    "links": [
+      "https://service.unece.org/trade/locode/kn.htm"
+    ]
+  },
+  {
+    "contryCode": "LC",
+    "label": "Saint Lucia",
+    "links": [
+      "https://service.unece.org/trade/locode/lc.htm"
+    ]
+  },
+  {
+    "contryCode": "MF",
+    "label": "Saint Martin (French Part)",
+    "links": [
+      "https://service.unece.org/trade/locode/mf.htm"
+    ]
+  },
+  {
+    "contryCode": "PM",
+    "label": "Saint Pierre and Miquelon",
+    "links": [
+      "https://service.unece.org/trade/locode/pm.htm"
+    ]
+  },
+  {
+    "contryCode": "VC",
+    "label": "Saint Vincent and the Grenadines",
+    "links": [
+      "https://service.unece.org/trade/locode/vc.htm"
+    ]
+  },
+  {
+    "contryCode": "WS",
+    "label": "Samoa",
+    "links": [
+      "https://service.unece.org/trade/locode/ws.htm"
+    ]
+  },
+  {
+    "contryCode": "SM",
+    "label": "San Marino",
+    "links": [
+      "https://service.unece.org/trade/locode/sm.htm"
+    ]
+  },
+  {
+    "contryCode": "ST",
+    "label": "Sao Tome and Principe",
+    "links": [
+      "https://service.unece.org/trade/locode/st.htm"
+    ]
+  },
+  {
+    "contryCode": "SA",
+    "label": "Saudi Arabia",
+    "links": [
+      "https://service.unece.org/trade/locode/sa.htm"
+    ]
+  },
+  {
+    "contryCode": "SN",
+    "label": "Senegal",
+    "links": [
+      "https://service.unece.org/trade/locode/sn.htm"
+    ]
+  },
+  {
+    "contryCode": "RS",
+    "label": "Serbia",
+    "links": [
+      "https://service.unece.org/trade/locode/rs.htm"
+    ]
+  },
+  {
+    "contryCode": "SC",
+    "label": "Seychelles",
+    "links": [
+      "https://service.unece.org/trade/locode/sc.htm"
+    ]
+  },
+  {
+    "contryCode": "SL",
+    "label": "Sierra Leone",
+    "links": [
+      "https://service.unece.org/trade/locode/sl.htm"
+    ]
+  },
+  {
+    "contryCode": "SG",
+    "label": "Singapore",
+    "links": [
+      "https://service.unece.org/trade/locode/sg.htm"
+    ]
+  },
+  {
+    "contryCode": "SX",
+    "label": "Sint Maarten (Dutch Part)",
+    "links": [
+      "https://service.unece.org/trade/locode/sx.htm"
+    ]
+  },
+  {
+    "contryCode": "SK",
+    "label": "Slovakia",
+    "links": [
+      "https://service.unece.org/trade/locode/sk.htm"
+    ]
+  },
+  {
+    "contryCode": "SI",
+    "label": "Slovenia",
+    "links": [
+      "https://service.unece.org/trade/locode/si.htm"
+    ]
+  },
+  {
+    "contryCode": "SB",
+    "label": "Solomon Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/sb.htm"
+    ]
+  },
+  {
+    "contryCode": "SO",
+    "label": "Somalia",
+    "links": [
+      "https://service.unece.org/trade/locode/so.htm"
+    ]
+  },
+  {
+    "contryCode": "ZA",
+    "label": "South Africa",
+    "links": [
+      "https://service.unece.org/trade/locode/za.htm"
+    ]
+  },
+  {
+    "contryCode": "GS",
+    "label": "South Georgia and the South Sandwich Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/gs.htm"
+    ]
+  },
+  {
+    "contryCode": "SS",
+    "label": "South Sudan",
+    "links": [
+      "https://service.unece.org/trade/locode/ss.htm"
+    ]
+  },
+  {
+    "contryCode": "ES",
+    "label": "Spain",
+    "links": [
+      "https://service.unece.org/trade/locode/es.htm"
+    ]
+  },
+  {
+    "contryCode": "LK",
+    "label": "Sri Lanka",
+    "links": [
+      "https://service.unece.org/trade/locode/lk.htm"
+    ]
+  },
+  {
+    "contryCode": "SD",
+    "label": "Sudan",
+    "links": [
+      "https://service.unece.org/trade/locode/sd.htm"
+    ]
+  },
+  {
+    "contryCode": "SR",
+    "label": "Suriname",
+    "links": [
+      "https://service.unece.org/trade/locode/sr.htm"
+    ]
+  },
+  {
+    "contryCode": "SJ",
+    "label": "Svalbard and Jan Mayen",
+    "links": [
+      "https://service.unece.org/trade/locode/sj.htm"
+    ]
+  },
+  {
+    "contryCode": "SE",
+    "label": "Sweden",
+    "links": [
+      "https://service.unece.org/trade/locode/se.htm"
+    ]
+  },
+  {
+    "contryCode": "CH",
+    "label": "Switzerland",
+    "links": [
+      "https://service.unece.org/trade/locode/ch.htm"
+    ]
+  },
+  {
+    "contryCode": "SY",
+    "label": "Syrian Arab Republic",
+    "links": [
+      "https://service.unece.org/trade/locode/sy.htm"
+    ]
+  },
+  {
+    "contryCode": "TW",
+    "label": "Taiwan, Province of China",
+    "links": [
+      "https://service.unece.org/trade/locode/tw.htm"
+    ]
+  },
+  {
+    "contryCode": "TJ",
+    "label": "Tajikistan",
+    "links": [
+      "https://service.unece.org/trade/locode/tj.htm"
+    ]
+  },
+  {
+    "contryCode": "TZ",
+    "label": "Tanzania, United Republic of",
+    "links": [
+      "https://service.unece.org/trade/locode/tz.htm"
+    ]
+  },
+  {
+    "contryCode": "TH",
+    "label": "Thailand",
+    "links": [
+      "https://service.unece.org/trade/locode/th.htm"
+    ]
+  },
+  {
+    "contryCode": "TL",
+    "label": "Timor-Leste",
+    "links": [
+      "https://service.unece.org/trade/locode/tl.htm"
+    ]
+  },
+  {
+    "contryCode": "TG",
+    "label": "Togo",
+    "links": [
+      "https://service.unece.org/trade/locode/tg.htm"
+    ]
+  },
+  {
+    "contryCode": "TK",
+    "label": "Tokelau",
+    "links": [
+      "https://service.unece.org/trade/locode/tk.htm"
+    ]
+  },
+  {
+    "contryCode": "TO",
+    "label": "Tonga",
+    "links": [
+      "https://service.unece.org/trade/locode/to.htm"
+    ]
+  },
+  {
+    "contryCode": "TT",
+    "label": "Trinidad and Tobago",
+    "links": [
+      "https://service.unece.org/trade/locode/tt.htm"
+    ]
+  },
+  {
+    "contryCode": "TN",
+    "label": "Tunisia",
+    "links": [
+      "https://service.unece.org/trade/locode/tn.htm"
+    ]
+  },
+  {
+    "contryCode": "TR",
+    "label": "Türkiye",
+    "links": [
+      "https://service.unece.org/trade/locode/tr.htm"
+    ]
+  },
+  {
+    "contryCode": "TM",
+    "label": "Turkmenistan",
+    "links": [
+      "https://service.unece.org/trade/locode/tm.htm"
+    ]
+  },
+  {
+    "contryCode": "TC",
+    "label": "Turks and Caicos Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/tc.htm"
+    ]
+  },
+  {
+    "contryCode": "TV",
+    "label": "Tuvalu",
+    "links": [
+      "https://service.unece.org/trade/locode/tv.htm"
+    ]
+  },
+  {
+    "contryCode": "UG",
+    "label": "Uganda",
+    "links": [
+      "https://service.unece.org/trade/locode/ug.htm"
+    ]
+  },
+  {
+    "contryCode": "UA",
+    "label": "Ukraine",
+    "links": [
+      "https://service.unece.org/trade/locode/ua.htm"
+    ]
+  },
+  {
+    "contryCode": "AE",
+    "label": "United Arab Emirates",
+    "links": [
+      "https://service.unece.org/trade/locode/ae.htm"
+    ]
+  },
+  {
+    "contryCode": "GB",
+    "label": "United Kingdom",
+    "links": [
+      "https://service.unece.org/trade/locode/gb.htm"
+    ]
+  },
+  {
+    "contryCode": "US",
+    "label": "United States",
+    "links": [
+      "https://service.unece.org/trade/locode/us.htm",
+      "https://service.unece.org/trade/locode/usa.htm",
+      "https://service.unece.org/trade/locode/usf.htm",
+      "https://service.unece.org/trade/locode/usk.htm",
+      "https://service.unece.org/trade/locode/usp.htm",
+      "https://service.unece.org/trade/locode/usu.htm"
+    ]
+  },
+  {
+    "contryCode": "UM",
+    "label": "United States Minor Outlying Islands",
+    "links": [
+      "https://service.unece.org/trade/locode/um.htm"
+    ]
+  },
+  {
+    "contryCode": "UY",
+    "label": "Uruguay",
+    "links": [
+      "https://service.unece.org/trade/locode/uy.htm"
+    ]
+  },
+  {
+    "contryCode": "UZ",
+    "label": "Uzbekistan",
+    "links": [
+      "https://service.unece.org/trade/locode/uz.htm"
+    ]
+  },
+  {
+    "contryCode": "VU",
+    "label": "Vanuatu",
+    "links": [
+      "https://service.unece.org/trade/locode/vu.htm"
+    ]
+  },
+  {
+    "contryCode": "VE",
+    "label": "Venezuela",
+    "links": [
+      "https://service.unece.org/trade/locode/ve.htm"
+    ]
+  },
+  {
+    "contryCode": "VN",
+    "label": "Viet Nam",
+    "links": [
+      "https://service.unece.org/trade/locode/vn.htm"
+    ]
+  },
+  {
+    "contryCode": "VG",
+    "label": "Virgin Islands, British",
+    "links": [
+      "https://service.unece.org/trade/locode/vg.htm"
+    ]
+  },
+  {
+    "contryCode": "VI",
+    "label": "Virgin Islands, U.S.",
+    "links": [
+      "https://service.unece.org/trade/locode/vi.htm"
+    ]
+  },
+  {
+    "contryCode": "WF",
+    "label": "Wallis and Futuna",
+    "links": [
+      "https://service.unece.org/trade/locode/wf.htm"
+    ]
+  },
+  {
+    "contryCode": "EH",
+    "label": "Western Sahara",
+    "links": [
+      "https://service.unece.org/trade/locode/eh.htm"
+    ]
+  },
+  {
+    "contryCode": "YE",
+    "label": "Yemen",
+    "links": [
+      "https://service.unece.org/trade/locode/ye.htm"
+    ]
+  },
+  {
+    "contryCode": "ZM",
+    "label": "Zambia",
+    "links": [
+      "https://service.unece.org/trade/locode/zm.htm"
+    ]
+  },
+  {
+    "contryCode": "ZW",
+    "label": "Zimbabwe",
+    "links": [
+      "https://service.unece.org/trade/locode/zw.htm"
+    ]
+  }
+]

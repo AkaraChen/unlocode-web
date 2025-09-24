@@ -48,5 +48,5 @@ export async function fetchCountryList(): Promise<CountryRow[]> {
     // 过滤掉可能的空行
     .filter((r) => r.contryCode && r.label);
 
-  return data;
+  return data.sort();
 }

@@ -1,6 +1,7 @@
 export interface Port {
   locode: string;
   name: string;
+  lnglat?: [number, number];
 }
 
 export interface Country {

@@ -119,5 +119,5 @@ export async function fetchCountryLocodes(
     })
     .filter((x): x is CountryLocodeRow => !!x);
 
-  return items;
+  return items.sort();
 }
