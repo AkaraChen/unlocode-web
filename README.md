@@ -63,13 +63,15 @@ pnpm start           # runs the backend (expects prior build if using compiled o
 
 - Hono server (`packages/backend/src/server.ts`)
 - Uses DuckDB via `@duckdb/node-api` to query `data/unlocode.json`
-- Provides `/healthz` and `/api/search`
+- Provides `/healthz`, `/api/search`, `/api/countries/:code`
 - `pnpm --filter @unlocode/backend dev`
 
 ### `@unlocode/frontend`
 
 - React Router app under `packages/frontend`
-- Home route (`app/routes/home.tsx`) fetches the backend and shares results with the UI
+- Home route (`app/routes/home.tsx`) 提供搜索入口与产品信息，负责跳转到结果页
+- Results route (`app/routes/results.tsx`) 调用后端 `/api/search` 并呈现国家与港口匹配详情
+- Country route (`app/routes/countries.$code.tsx`) 调用 `/api/countries/:code` 展示指定国家的港口列表并支持前端筛选
 - `pnpm --filter @unlocode/frontend dev`
 
 ## Data Location

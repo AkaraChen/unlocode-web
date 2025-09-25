@@ -91,3 +91,58 @@ export async function searchUnlocode(q: string | null) {
     } catch {}
   }
 }
+
+export async function getCountryDetail(code: string) {
+  const trimmed = code.trim().toUpperCase();
+  if (!trimmed) {
+    throw new Error("Country code is required");
+  }
+
+  const conn = await getConnection();
+  const file = resolveCrawlerPath("data", "unlocode.json");
+  if (!fs.existsSync(file)) {
+    throw new Error(
+      `未找到数据文件: ${path.relative(resolveCrawlerPath(), file)}。请先运行爬虫生成数据。`,
+    );
+  }
+  const lit = file.replace(/'/g, "''");
+  await conn.run(`CREATE OR REPLACE VIEW raw AS SELECT * FROM read_json_auto('${lit}')`);
+
+  try {
+    const countryResult = await conn.runAndReadAll(
+      `SELECT code, name FROM raw WHERE upper(code) = ?1 LIMIT 1`,
+      [trimmed],
+    );
+    await countryResult.readAll();
+    const [country] = countryResult.getRowObjectsJS() as CountryRow[];
+
+    if (!country) {
+      throw Object.assign(new Error(`Country ${trimmed} not found`), {
+        status: 404,
+      });
+    }
+
+    const portResult = await conn.runAndReadAll(
+      `SELECT
+         struct_extract(p.unnest, 'locode') AS locode,
+         struct_extract(p.unnest, 'name') AS name,
+         r.code AS countryCode,
+         r.name AS countryName
+       FROM raw r, UNNEST(r.ports) AS p(unnest)
+       WHERE upper(r.code) = ?1
+       ORDER BY struct_extract(p.unnest, 'name') ASC`,
+      [trimmed],
+    );
+    await portResult.readAll();
+    const ports = portResult.getRowObjectsJS() as PortRow[];
+
+    return { country, ports };
+  } finally {
+    try {
+      await conn.run("DROP VIEW IF EXISTS raw");
+    } catch {}
+    try {
+      conn.disconnectSync();
+    } catch {}
+  }
+}
