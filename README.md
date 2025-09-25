@@ -1,29 +1,10 @@
-# UN/LOCODE Web
+# UN/LOCODE Monorepo
 
-A small web app to crawl and search UN/LOCODE data with a minimal UI.
+A pnpm workspace with three packages that together crawl, serve, and surface UN/LOCODE data.
 
-- Crawler scrapes UNECE pages and produces structured JSON
-- Server-side search via DuckDB over the generated JSON
-- Simple centered command palette UI (shadcn/ui) with countries and ports
-
-## Overview
-
-This repo has two parts:
-
-- Crawler (TypeScript/Node)
-  - `crawler/country-list.ts`: scrapes country index and links
-  - `crawler/country.ts`: scrapes per-country LOCODE table rows
-    - Coordinates parsed to GeoJSON `[lng, lat]` in decimal degrees, rounded to 2 decimals
-    - Robust table selection and cleanup
-  - `crawler/index.ts`: orchestrates crawl and writes JSON to `data/`
-  - Output format: `data/unlocode.json` is `Array<Country>` as defined in `crawler/types.ts`
-    - Country `{ code, name, ports }`
-    - Port `{ locode, name }` where `name` uses `nameWoDiacritics`
-
-- Web app (React Router + shadcn/ui + TanStack Query)
-  - Server search API `app/routes/api.search.ts` calls DuckDB to query JSON
-  - Centered command dialog at `/` with a search input
-  - Shows top country and port matches (no click behavior by design)
+- `@unlocode/crawler` — scripts to scrape UNECE pages and output JSON under `data/`
+- `@unlocode/backend` — Hono server exposing `/api/search` backed by DuckDB over the generated JSON
+- `@unlocode/frontend` — React Router app whose home loader calls the backend `/api/search` and renders a command dialog UI
 
 ## Prerequisites
 
@@ -34,14 +15,11 @@ This repo has two parts:
 
 ```bash
 pnpm install
-
-# If prompted, approve DuckDB native build
-pnpm approve-builds duckdb
 ```
 
 ## Crawl Data
 
-Generates `data/country.json` and `data/unlocode.json`.
+Generates `data/country.json` and `data/unlocode.json` via the crawler package.
 
 ```bash
 pnpm crawl
@@ -49,70 +27,63 @@ pnpm crawl
 
 Notes:
 
-- Country labels are cleaned to drop trailing bracketed segments, e.g. `United States [A to E] ...` -> `United States`.
+- Country labels are cleaned to drop trailing bracketed segments.
 - Port names use `nameWoDiacritics` for better ASCII searchability.
 - Coordinates are parsed from `DDMMN DDDMME` and converted to decimal `[lng, lat]` with two decimals.
 
-## Run Dev Server
+## Run Dev Servers
 
 ```bash
+# Start frontend and backend together
 pnpm dev
+
+# Or run individually
+pnpm dev:backend
+pnpm dev:frontend
 ```
 
-Open `http://localhost:5173`. The home page displays a centered command dialog. Typing triggers a query to `/api/search?q=...`.
-
-## Server-side Search (DuckDB)
-
-- Located in `app/server/search.server.ts` (server-only, not bundled to client)
-- Uses `@duckdb/node-api` and `read_json_auto` to query `data/unlocode.json`
-- Ports are unnested with `UNNEST(ports)` and accessed via `struct_extract(..., 'field')`
-- Query prioritizes:
-  1) Ports whose name matches the query
-  2) Ports belonging to countries that match the query
-
-If you see binder errors about prepared statements, note that DDL cannot be prepared. Paths are inlined in the `CREATE VIEW` statement.
-
-## UI
-
-- shadcn/ui components: command, dialog, input, popover (the UI currently uses command dialog only)
-- Centered modal shows two groups: Countries and Ports
-- No click actions; this is intentionally simple
+The backend listens on `http://localhost:3000` by default. The frontend expects the backend to be reachable at `/api/search`; override the origin via `BACKEND_URL` when running the frontend (e.g. `BACKEND_URL=http://api:3000 pnpm dev:frontend`).
 
 ## Build & Start
 
 ```bash
-pnpm build
-pnpm start
+pnpm build           # runs package builds where defined
+pnpm start           # runs the backend (expects prior build if using compiled output)
 ```
 
-## Project Structure
+## Packages Overview
 
-```
-crawler/
-  country-list.ts   # scrape index of countries + links
-  country.ts        # scrape country LOCODE rows; parse coords -> [lng, lat]
-  index.ts          # orchestrate crawl, write data/*.json
-  types.ts          # shared data types for crawl output
-app/
-  routes/
-    home.tsx        # centered command dialog search UI
-    api.search.ts   # JSON API for search
-  server/
-    search.server.ts# DuckDB-backed search (server-only)
-data/
-  country.json      # raw country list with links (for debugging/inspection)
-  unlocode.json     # Country[] used by the app
-```
+### `@unlocode/crawler`
+
+- `pnpm --filter @unlocode/crawler crawl`
+- Outputs JSON to the workspace `data/` directory
+- Source under `packages/crawler/src/*`
+
+### `@unlocode/backend`
+
+- Hono server (`packages/backend/src/server.ts`)
+- Uses DuckDB via `@duckdb/node-api` to query `data/unlocode.json`
+- Provides `/healthz` and `/api/search`
+- `pnpm --filter @unlocode/backend dev`
+
+### `@unlocode/frontend`
+
+- React Router app under `packages/frontend`
+- Home route (`app/routes/home.tsx`) fetches the backend and shares results with the UI
+- `pnpm --filter @unlocode/frontend dev`
+
+## Data Location
+
+Crawler output remains at the workspace root `data/` so both backend and frontend can read the JSON files. Set `WORKSPACE_ROOT` if you run scripts from a different working directory.
 
 ## Troubleshooting
 
-- DuckDB build skipped:
-  - Run `pnpm approve-builds duckdb` and re-run.
-- No results after search:
-  - Ensure `pnpm crawl` generated `data/unlocode.json` and it exists.
-- Want to adjust search behavior:
-  - Tweak ORDER BY in `app/server/search.server.ts` to reprioritize ranking.
+- Backend returns 500/502:
+  - Ensure the crawler has generated `data/unlocode.json`
+  - Verify `BACKEND_URL` points to the backend when running the frontend
+- DuckDB native build prompts:
+  - Run `pnpm approve-builds duckdb` if prompted, then retry.
 
 ---
 
-Built with React Router, shadcn/ui, DuckDB, and TypeScript.
+Built with Hono, React Router, DuckDB, and TypeScript in a pnpm monorepo.

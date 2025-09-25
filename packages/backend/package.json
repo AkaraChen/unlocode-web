@@ -1,0 +1,20 @@
+{
+  "name": "@unlocode/backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "^1.4.0-r.1",
+    "@hono/node-server": "^1.13.7",
+    "duckdb": "^1.4.0",
+    "hono": "^4.6.10"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.8.3"
+  }
+}
