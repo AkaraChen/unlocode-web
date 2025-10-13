@@ -1,7 +1,8 @@
-import { getConnection } from "./db";
-import { ensureBackendDataFile } from "./data";
+import { db } from "./db";
+import { countries, unlocode } from "./schema";
+import { or, sql } from "drizzle-orm";
 
-export type PortRow = {
+export type UnlocodeRow = {
   locode: string;
   name: string;
   countryCode: string;
@@ -13,77 +14,48 @@ export type CountryRow = {
   name: string;
 };
 
-const file = await ensureBackendDataFile("unlocode.json");
-
 export async function searchUnlocode(q: string | null) {
-  const conn = await getConnection();
-
-  const lit = file.replace(/'/g, "''");
-  await conn.run(`CREATE OR REPLACE VIEW raw AS SELECT * FROM read_json_auto('${lit}')`);
-
-  let countryRows: CountryRow[] = [];
-  let portRows: PortRow[] = [];
-
-  try {
-    if (q && q.trim().length > 0) {
-      const cr = await conn.runAndReadAll(
-        `SELECT code, name
-         FROM raw
-         WHERE lower(name) LIKE '%' || lower(?1) || '%'
-            OR lower(code) LIKE '%' || lower(?1) || '%'
-         ORDER BY name
-         LIMIT 10`,
-        [q],
-      );
-      await cr.readAll();
-      countryRows = cr.getRowObjectsJS() as CountryRow[];
-
-      const pr = await conn.runAndReadAll(
-        `SELECT
-           struct_extract(p.unnest, 'locode') AS locode,
-           struct_extract(p.unnest, 'name') AS name,
-           r.code AS countryCode,
-           r.name AS countryName
-         FROM raw r, UNNEST(r.ports) AS p(unnest)
-         WHERE lower(struct_extract(p.unnest, 'name')) LIKE '%' || lower(?1) || '%'
-            OR lower(struct_extract(p.unnest, 'locode')) LIKE '%' || lower(?1) || '%'
-            OR lower(r.name) LIKE '%' || lower(?1) || '%'
-         ORDER BY
-           CASE WHEN lower(struct_extract(p.unnest, 'name')) LIKE '%' || lower(?1) || '%' THEN 0 ELSE 1 END,
-           CASE WHEN lower(r.name) LIKE '%' || lower(?1) || '%' THEN 0 ELSE 1 END,
-           struct_extract(p.unnest, 'name') ASC
-         LIMIT 200`,
-        [q],
-      );
-      await pr.readAll();
-      portRows = pr.getRowObjectsJS() as PortRow[];
-    } else {
-      const cr = await conn.runAndReadAll(`SELECT code, name FROM raw LIMIT 10`);
-      await cr.readAll();
-      countryRows = cr.getRowObjectsJS() as CountryRow[];
-
-      const pr = await conn.runAndReadAll(
-        `SELECT
-           struct_extract(p.unnest, 'locode') AS locode,
-           struct_extract(p.unnest, 'name') AS name,
-           r.code AS countryCode,
-           r.name AS countryName
-         FROM raw r, UNNEST(r.ports) AS p(unnest)
-         LIMIT 10`,
-      );
-      await pr.readAll();
-      portRows = pr.getRowObjectsJS() as PortRow[];
-    }
-
-    return { countries: countryRows, ports: portRows };
-  } finally {
-    try {
-      await conn.run("DROP VIEW IF EXISTS raw");
-    } catch {}
-    try {
-      conn.disconnectSync();
-    } catch {}
+  if (!q || q.trim().length === 0) {
+    throw new Error("Query parameter is required");
   }
+
+  const query = `%${q.toLowerCase()}%`;
+
+  const countryRows = await db
+    .select({ code: countries.code, name: countries.name })
+    .from(countries)
+    .where(
+      or(
+        sql`lower(${countries.name}) LIKE ${query}`,
+        sql`lower(${countries.code}) LIKE ${query}`,
+      ),
+    )
+    .orderBy(countries.name)
+    .limit(10);
+
+  const unlocodeRows = await db
+    .select({
+      locode: unlocode.locode,
+      name: unlocode.name,
+      countryCode: unlocode.countryCode,
+      countryName: unlocode.countryName,
+    })
+    .from(unlocode)
+    .where(
+      or(
+        sql`lower(${unlocode.name}) LIKE ${query}`,
+        sql`lower(${unlocode.locode}) LIKE ${query}`,
+        sql`lower(${unlocode.countryName}) LIKE ${query}`,
+      ),
+    )
+    .orderBy(
+      sql`CASE WHEN lower(${unlocode.name}) LIKE ${query} THEN 0 ELSE 1 END`,
+      sql`CASE WHEN lower(${unlocode.countryName}) LIKE ${query} THEN 0 ELSE 1 END`,
+      unlocode.name,
+    )
+    .limit(200);
+
+  return { countries: countryRows, unlocode: unlocodeRows };
 }
 
 export async function getCountryDetail(code: string) {
@@ -92,45 +64,28 @@ export async function getCountryDetail(code: string) {
     throw new Error("Country code is required");
   }
 
-  const conn = await getConnection();
-  const lit = file.replace(/'/g, "''");
-  await conn.run(`CREATE OR REPLACE VIEW raw AS SELECT * FROM read_json_auto('${lit}')`);
+  const [country] = await db
+    .select({ code: countries.code, name: countries.name })
+    .from(countries)
+    .where(sql`upper(${countries.code}) = ${trimmed}`)
+    .limit(1);
 
-  try {
-    const countryResult = await conn.runAndReadAll(
-      `SELECT code, name FROM raw WHERE upper(code) = ?1 LIMIT 1`,
-      [trimmed],
-    );
-    await countryResult.readAll();
-    const [country] = countryResult.getRowObjectsJS() as CountryRow[];
-
-    if (!country) {
-      throw Object.assign(new Error(`Country ${trimmed} not found`), {
-        status: 404,
-      });
-    }
-
-    const portResult = await conn.runAndReadAll(
-      `SELECT
-         struct_extract(p.unnest, 'locode') AS locode,
-         struct_extract(p.unnest, 'name') AS name,
-         r.code AS countryCode,
-         r.name AS countryName
-       FROM raw r, UNNEST(r.ports) AS p(unnest)
-       WHERE upper(r.code) = ?1
-       ORDER BY struct_extract(p.unnest, 'name') ASC`,
-      [trimmed],
-    );
-    await portResult.readAll();
-    const ports = portResult.getRowObjectsJS() as PortRow[];
-
-    return { country, ports };
-  } finally {
-    try {
-      await conn.run("DROP VIEW IF EXISTS raw");
-    } catch {}
-    try {
-      conn.disconnectSync();
-    } catch {}
+  if (!country) {
+    throw Object.assign(new Error(`Country ${trimmed} not found`), {
+      status: 404,
+    });
   }
+
+  const unlocodeList = await db
+    .select({
+      locode: unlocode.locode,
+      name: unlocode.name,
+      countryCode: unlocode.countryCode,
+      countryName: unlocode.countryName,
+    })
+    .from(unlocode)
+    .where(sql`upper(${unlocode.countryCode}) = ${trimmed}`)
+    .orderBy(unlocode.name);
+
+  return { country, unlocode: unlocodeList };
 }

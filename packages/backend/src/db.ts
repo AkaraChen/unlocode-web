@@ -1,15 +1,9 @@
-import * as duck from "@duckdb/node-api";
+import { createClient } from "@libsql/client";
+import { drizzle } from "drizzle-orm/libsql";
+import * as schema from "./schema";
 
-let instancePromise: Promise<duck.DuckDBInstance> | null = null;
+const client = createClient({
+  url: "file:./data/unlocode.db",
+});
 
-export async function getDuckDBInstance() {
-  if (!instancePromise) {
-    instancePromise = duck.DuckDBInstance.fromCache(":memory:");
-  }
-  return instancePromise;
-}
-
-export async function getConnection() {
-  const instance = await getDuckDBInstance();
-  return duck.DuckDBConnection.create(instance);
-}
+export const db = drizzle(client, { schema });
