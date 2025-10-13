@@ -1,7 +1,5 @@
-import fs from "node:fs";
-import path from "node:path";
 import { getConnection } from "./db";
-import { resolveCrawlerPath } from "./paths";
+import { ensureBackendDataFile } from "./data";
 
 export type PortRow = {
   locode: string;
@@ -15,15 +13,11 @@ export type CountryRow = {
   name: string;
 };
 
+const file = await ensureBackendDataFile("unlocode.json");
+
 export async function searchUnlocode(q: string | null) {
   const conn = await getConnection();
 
-  const file = resolveCrawlerPath("data", "unlocode.json");
-  if (!fs.existsSync(file)) {
-    throw new Error(
-      `未找到数据文件: ${path.relative(resolveCrawlerPath(), file)}。请先运行爬虫生成数据。`,
-    );
-  }
   const lit = file.replace(/'/g, "''");
   await conn.run(`CREATE OR REPLACE VIEW raw AS SELECT * FROM read_json_auto('${lit}')`);
 
@@ -99,12 +93,6 @@ export async function getCountryDetail(code: string) {
   }
 
   const conn = await getConnection();
-  const file = resolveCrawlerPath("data", "unlocode.json");
-  if (!fs.existsSync(file)) {
-    throw new Error(
-      `未找到数据文件: ${path.relative(resolveCrawlerPath(), file)}。请先运行爬虫生成数据。`,
-    );
-  }
   const lit = file.replace(/'/g, "''");
   await conn.run(`CREATE OR REPLACE VIEW raw AS SELECT * FROM read_json_auto('${lit}')`);
 
